@@ -1,0 +1,1298 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'forever' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose cache add [ 'forever', null ]
+5 verbose cache add name=undefined spec="forever" args=["forever",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'forever',
+6 verbose parsed url   path: 'forever',
+6 verbose parsed url   href: 'forever' }
+7 silly lockFile e07f8c4a-forever forever
+8 verbose lock forever /Users/xTalandier/.npm/e07f8c4a-forever.lock
+9 silly lockFile e07f8c4a-forever forever
+10 silly lockFile e07f8c4a-forever forever
+11 verbose addNamed [ 'forever', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 28ef027b-forever forever@
+14 verbose lock forever@ /Users/xTalandier/.npm/28ef027b-forever.lock
+15 silly addNameRange { name: 'forever', range: '*', hasData: false }
+16 verbose request where is /forever
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id d97d530a3975c280
+19 verbose url raw /forever
+20 verbose url resolving [ 'https://registry.npmjs.org/', './forever' ]
+21 verbose url resolved https://registry.npmjs.org/forever
+22 verbose request where is https://registry.npmjs.org/forever
+23 info trying registry request attempt 1 at 17:11:53
+24 verbose etag "561B7N77VK1GSRUP0FVZ1A9HD"
+25 http GET https://registry.npmjs.org/forever
+26 http 304 https://registry.npmjs.org/forever
+27 silly registry.get cb [ 304,
+27 silly registry.get   { date: 'Tue, 14 Apr 2015 15:11:54 GMT',
+27 silly registry.get     server: 'Apache',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     'last-modified': 'Tue, 14 Apr 2015 15:11:54 GMT',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     etag: '"561B7N77VK1GSRUP0FVZ1A9HD"',
+27 silly registry.get     age: '12',
+27 silly registry.get     'x-served-by': 'cache-ams4146-AMS',
+27 silly registry.get     'x-cache': 'HIT',
+27 silly registry.get     'x-cache-hits': '1',
+27 silly registry.get     'x-timer': 'S1429024314.490992,VS0,VE0',
+27 silly registry.get     vary: 'Accept',
+27 silly registry.get     'content-length': '0',
+27 silly registry.get     'keep-alive': 'timeout=10, max=50',
+27 silly registry.get     connection: 'Keep-Alive' } ]
+28 verbose etag https://registry.npmjs.org/forever from cache
+29 silly addNameRange number 2 { name: 'forever', range: '*', hasData: true }
+30 silly addNameRange versions [ 'forever',
+30 silly addNameRange   [ '0.6.0',
+30 silly addNameRange     '0.6.1',
+30 silly addNameRange     '0.6.2',
+30 silly addNameRange     '0.6.3',
+30 silly addNameRange     '0.6.4',
+30 silly addNameRange     '0.6.5',
+30 silly addNameRange     '0.6.6',
+30 silly addNameRange     '0.6.7',
+30 silly addNameRange     '0.6.8',
+30 silly addNameRange     '0.6.9',
+30 silly addNameRange     '0.7.0',
+30 silly addNameRange     '0.7.1',
+30 silly addNameRange     '0.7.2',
+30 silly addNameRange     '0.7.3',
+30 silly addNameRange     '0.7.4',
+30 silly addNameRange     '0.7.5',
+30 silly addNameRange     '0.8.0',
+30 silly addNameRange     '0.8.1',
+30 silly addNameRange     '0.8.2',
+30 silly addNameRange     '0.8.3',
+30 silly addNameRange     '0.8.4',
+30 silly addNameRange     '0.8.5',
+30 silly addNameRange     '0.9.0',
+30 silly addNameRange     '0.9.1',
+30 silly addNameRange     '0.9.2',
+30 silly addNameRange     '0.10.0',
+30 silly addNameRange     '0.10.5',
+30 silly addNameRange     '0.10.6',
+30 silly addNameRange     '0.10.7',
+30 silly addNameRange     '0.10.8',
+30 silly addNameRange     '0.10.9',
+30 silly addNameRange     '0.10.10',
+30 silly addNameRange     '0.10.11',
+30 silly addNameRange     '0.11.0',
+30 silly addNameRange     '0.11.1',
+30 silly addNameRange     '0.12.0',
+30 silly addNameRange     '0.13.0',
+30 silly addNameRange     '0.14.1' ] ]
+31 verbose addNamed [ 'forever', '0.14.1' ]
+32 verbose addNamed [ '0.14.1', '0.14.1' ]
+33 silly lockFile ce67a8ea-forever-0-14-1 forever@0.14.1
+34 verbose lock forever@0.14.1 /Users/xTalandier/.npm/ce67a8ea-forever-0-14-1.lock
+35 silly lockFile ce67a8ea-forever-0-14-1 forever@0.14.1
+36 silly lockFile ce67a8ea-forever-0-14-1 forever@0.14.1
+37 silly lockFile 28ef027b-forever forever@
+38 silly lockFile 28ef027b-forever forever@
+39 silly resolved [ { name: 'forever',
+39 silly resolved     preferGlobal: 'true',
+39 silly resolved     description: 'A simple CLI tool for ensuring that a given node script runs continuously (i.e. forever)',
+39 silly resolved     version: '0.14.1',
+39 silly resolved     author: { name: 'Charlie Robbins', email: 'charlie.robbins@gmail.com' },
+39 silly resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+39 silly resolved     repository: { type: 'git', url: 'http://github.com/nodejitsu/forever.git' },
+39 silly resolved     keywords: [ 'cli', 'fault tolerant', 'sysadmin', 'tools' ],
+39 silly resolved     dependencies:
+39 silly resolved      { colors: '~0.6.2',
+39 silly resolved        cliff: '~0.1.9',
+39 silly resolved        flatiron: '~0.4.2',
+39 silly resolved        'forever-monitor': '~1.5.1',
+39 silly resolved        nconf: '~0.6.9',
+39 silly resolved        nssocket: '~0.5.1',
+39 silly resolved        optimist: '~0.6.0',
+39 silly resolved        timespan: '~2.3.0',
+39 silly resolved        utile: '~0.2.1',
+39 silly resolved        winston: '~0.8.1' },
+39 silly resolved     devDependencies:
+39 silly resolved      { broadway: '~0.3.6',
+39 silly resolved        eventemitter2: '0.4.x',
+39 silly resolved        request: '2.x.x',
+39 silly resolved        vows: '0.7.x' },
+39 silly resolved     bin: { forever: './bin/forever' },
+39 silly resolved     main: './lib/forever',
+39 silly resolved     scripts: { test: 'vows test/**/*-test.js --spec -i' },
+39 silly resolved     engines: { node: '>= 0.8.x' },
+39 silly resolved     gitHead: '509eaf24deaf1ea8515298d5fcf16708715e658c',
+39 silly resolved     bugs: { url: 'https://github.com/nodejitsu/forever/issues' },
+39 silly resolved     homepage: 'https://github.com/nodejitsu/forever',
+39 silly resolved     _id: 'forever@0.14.1',
+39 silly resolved     _shasum: '48bed8c2b215be5c1a3bf429275514a4dca1158a',
+39 silly resolved     _from: 'forever@',
+39 silly resolved     _npmVersion: '2.2.0',
+39 silly resolved     _nodeVersion: '0.10.33',
+39 silly resolved     _npmUser: { name: 'indexzero', email: 'charlie.robbins@gmail.com' },
+39 silly resolved     dist:
+39 silly resolved      { shasum: '48bed8c2b215be5c1a3bf429275514a4dca1158a',
+39 silly resolved        tarball: 'http://registry.npmjs.org/forever/-/forever-0.14.1.tgz' },
+39 silly resolved     directories: {},
+39 silly resolved     _resolved: 'https://registry.npmjs.org/forever/-/forever-0.14.1.tgz',
+39 silly resolved     readme: 'ERROR: No README data found!' } ]
+40 info install forever@0.14.1 into /usr/local/lib
+41 info installOne forever@0.14.1
+42 verbose lib/node_modules/forever unbuild
+43 info preuninstall forever@0.14.1
+44 info uninstall forever@0.14.1
+45 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild forever@0.14.1
+46 verbose /usr/local/bin,[object Object] binRoot
+47 info postuninstall forever@0.14.1
+48 verbose tar unpack /Users/xTalandier/.npm/forever/0.14.1/package.tgz
+49 silly lockFile 5fd21e72-r-local-lib-node-modules-forever tar:///usr/local/lib/node_modules/forever
+50 verbose lock tar:///usr/local/lib/node_modules/forever /Users/xTalandier/.npm/5fd21e72-r-local-lib-node-modules-forever.lock
+51 silly lockFile 2f2d0572-r-npm-forever-0-14-1-package-tgz tar:///Users/xTalandier/.npm/forever/0.14.1/package.tgz
+52 verbose lock tar:///Users/xTalandier/.npm/forever/0.14.1/package.tgz /Users/xTalandier/.npm/2f2d0572-r-npm-forever-0-14-1-package-tgz.lock
+53 silly gunzTarPerm modes [ '755', '644' ]
+54 silly gunzTarPerm extractEntry package.json
+55 silly gunzTarPerm extractEntry .npmignore
+56 silly gunzTarPerm extractEntry README.md
+57 silly gunzTarPerm extractEntry LICENSE
+58 silly gunzTarPerm extractEntry CHANGELOG.md
+59 silly gunzTarPerm extractEntry .jshintrc
+60 silly gunzTarPerm extractEntry bin/forever
+61 silly gunzTarPerm extractEntry bin/monitor
+62 silly gunzTarPerm extractEntry lib/forever.js
+63 silly gunzTarPerm extractEntry lib/forever/cli.js
+64 silly gunzTarPerm extractEntry lib/forever/worker.js
+65 silly gunzTarPerm extractEntry .travis.yml
+66 silly gunzTarPerm extractEntry test/cli-test
+67 silly gunzTarPerm modified mode [ 'test/cli-test', 511, 493 ]
+68 silly gunzTarPerm extractEntry test/core/daemonic-inheritance-test.js
+69 silly gunzTarPerm extractEntry test/core/start-stop-relative-test.js
+70 silly gunzTarPerm extractEntry test/core/stopall-peaceful-test.js
+71 silly gunzTarPerm extractEntry test/core/stopbypid-peaceful-test.js
+72 silly gunzTarPerm extractEntry test/core/tail-stopall-test.js
+73 silly gunzTarPerm extractEntry test/fixtures/cluster-fork-mode.js
+74 silly gunzTarPerm extractEntry test/fixtures/server.js
+75 silly gunzTarPerm extractEntry test/fixtures/start-daemon.js
+76 silly gunzTarPerm extractEntry test/fixtures/log-on-interval.js
+77 silly gunzTarPerm extractEntry test/helpers/macros.js
+78 silly gunzTarPerm extractEntry test/helpers/mocks/child-process.js
+79 silly gunzTarPerm extractEntry test/helpers/mocks/monitor.js
+80 silly gunzTarPerm extractEntry test/helpers/mocks/stream.js
+81 silly gunzTarPerm extractEntry test/worker/multiple-workers-test.js
+82 silly gunzTarPerm extractEntry test/worker/simple-test.js
+83 silly lockFile 5fd21e72-r-local-lib-node-modules-forever tar:///usr/local/lib/node_modules/forever
+84 silly lockFile 5fd21e72-r-local-lib-node-modules-forever tar:///usr/local/lib/node_modules/forever
+85 silly lockFile 2f2d0572-r-npm-forever-0-14-1-package-tgz tar:///Users/xTalandier/.npm/forever/0.14.1/package.tgz
+86 silly lockFile 2f2d0572-r-npm-forever-0-14-1-package-tgz tar:///Users/xTalandier/.npm/forever/0.14.1/package.tgz
+87 info preinstall forever@0.14.1
+88 verbose readDependencies using package.json deps
+89 verbose readDependencies using package.json deps
+90 verbose cache add [ 'colors@~0.6.2', null ]
+91 verbose cache add name=undefined spec="colors@~0.6.2" args=["colors@~0.6.2",null]
+92 verbose parsed url { protocol: null,
+92 verbose parsed url   slashes: null,
+92 verbose parsed url   auth: null,
+92 verbose parsed url   host: null,
+92 verbose parsed url   port: null,
+92 verbose parsed url   hostname: null,
+92 verbose parsed url   hash: null,
+92 verbose parsed url   search: null,
+92 verbose parsed url   query: null,
+92 verbose parsed url   pathname: 'colors@~0.6.2',
+92 verbose parsed url   path: 'colors@~0.6.2',
+92 verbose parsed url   href: 'colors@~0.6.2' }
+93 verbose cache add [ 'cliff@~0.1.9', null ]
+94 verbose cache add name=undefined spec="cliff@~0.1.9" args=["cliff@~0.1.9",null]
+95 verbose parsed url { protocol: null,
+95 verbose parsed url   slashes: null,
+95 verbose parsed url   auth: null,
+95 verbose parsed url   host: null,
+95 verbose parsed url   port: null,
+95 verbose parsed url   hostname: null,
+95 verbose parsed url   hash: null,
+95 verbose parsed url   search: null,
+95 verbose parsed url   query: null,
+95 verbose parsed url   pathname: 'cliff@~0.1.9',
+95 verbose parsed url   path: 'cliff@~0.1.9',
+95 verbose parsed url   href: 'cliff@~0.1.9' }
+96 verbose cache add [ 'flatiron@~0.4.2', null ]
+97 verbose cache add name=undefined spec="flatiron@~0.4.2" args=["flatiron@~0.4.2",null]
+98 verbose parsed url { protocol: null,
+98 verbose parsed url   slashes: null,
+98 verbose parsed url   auth: null,
+98 verbose parsed url   host: null,
+98 verbose parsed url   port: null,
+98 verbose parsed url   hostname: null,
+98 verbose parsed url   hash: null,
+98 verbose parsed url   search: null,
+98 verbose parsed url   query: null,
+98 verbose parsed url   pathname: 'flatiron@~0.4.2',
+98 verbose parsed url   path: 'flatiron@~0.4.2',
+98 verbose parsed url   href: 'flatiron@~0.4.2' }
+99 verbose cache add name="colors" spec="~0.6.2" args=["colors","~0.6.2"]
+100 verbose parsed url { protocol: null,
+100 verbose parsed url   slashes: null,
+100 verbose parsed url   auth: null,
+100 verbose parsed url   host: null,
+100 verbose parsed url   port: null,
+100 verbose parsed url   hostname: null,
+100 verbose parsed url   hash: null,
+100 verbose parsed url   search: null,
+100 verbose parsed url   query: null,
+100 verbose parsed url   pathname: '~0.6.2',
+100 verbose parsed url   path: '~0.6.2',
+100 verbose parsed url   href: '~0.6.2' }
+101 verbose addNamed [ 'colors', '~0.6.2' ]
+102 verbose addNamed [ null, '>=0.6.2-0 <0.7.0-0' ]
+103 silly lockFile f2380b4d-colors-0-6-2 colors@~0.6.2
+104 verbose lock colors@~0.6.2 /Users/xTalandier/.npm/f2380b4d-colors-0-6-2.lock
+105 verbose cache add name="cliff" spec="~0.1.9" args=["cliff","~0.1.9"]
+106 verbose parsed url { protocol: null,
+106 verbose parsed url   slashes: null,
+106 verbose parsed url   auth: null,
+106 verbose parsed url   host: null,
+106 verbose parsed url   port: null,
+106 verbose parsed url   hostname: null,
+106 verbose parsed url   hash: null,
+106 verbose parsed url   search: null,
+106 verbose parsed url   query: null,
+106 verbose parsed url   pathname: '~0.1.9',
+106 verbose parsed url   path: '~0.1.9',
+106 verbose parsed url   href: '~0.1.9' }
+107 verbose addNamed [ 'cliff', '~0.1.9' ]
+108 verbose addNamed [ null, '>=0.1.9-0 <0.2.0-0' ]
+109 silly lockFile f56c4ca5-cliff-0-1-9 cliff@~0.1.9
+110 verbose lock cliff@~0.1.9 /Users/xTalandier/.npm/f56c4ca5-cliff-0-1-9.lock
+111 verbose cache add name="flatiron" spec="~0.4.2" args=["flatiron","~0.4.2"]
+112 verbose parsed url { protocol: null,
+112 verbose parsed url   slashes: null,
+112 verbose parsed url   auth: null,
+112 verbose parsed url   host: null,
+112 verbose parsed url   port: null,
+112 verbose parsed url   hostname: null,
+112 verbose parsed url   hash: null,
+112 verbose parsed url   search: null,
+112 verbose parsed url   query: null,
+112 verbose parsed url   pathname: '~0.4.2',
+112 verbose parsed url   path: '~0.4.2',
+112 verbose parsed url   href: '~0.4.2' }
+113 verbose addNamed [ 'flatiron', '~0.4.2' ]
+114 verbose addNamed [ null, '>=0.4.2-0 <0.5.0-0' ]
+115 silly lockFile 3b4d8e9c-flatiron-0-4-2 flatiron@~0.4.2
+116 verbose lock flatiron@~0.4.2 /Users/xTalandier/.npm/3b4d8e9c-flatiron-0-4-2.lock
+117 verbose cache add [ 'forever-monitor@~1.5.1', null ]
+118 verbose cache add name=undefined spec="forever-monitor@~1.5.1" args=["forever-monitor@~1.5.1",null]
+119 verbose parsed url { protocol: null,
+119 verbose parsed url   slashes: null,
+119 verbose parsed url   auth: null,
+119 verbose parsed url   host: null,
+119 verbose parsed url   port: null,
+119 verbose parsed url   hostname: null,
+119 verbose parsed url   hash: null,
+119 verbose parsed url   search: null,
+119 verbose parsed url   query: null,
+119 verbose parsed url   pathname: 'forever-monitor@~1.5.1',
+119 verbose parsed url   path: 'forever-monitor@~1.5.1',
+119 verbose parsed url   href: 'forever-monitor@~1.5.1' }
+120 verbose cache add [ 'nconf@~0.6.9', null ]
+121 verbose cache add name=undefined spec="nconf@~0.6.9" args=["nconf@~0.6.9",null]
+122 verbose parsed url { protocol: null,
+122 verbose parsed url   slashes: null,
+122 verbose parsed url   auth: null,
+122 verbose parsed url   host: null,
+122 verbose parsed url   port: null,
+122 verbose parsed url   hostname: null,
+122 verbose parsed url   hash: null,
+122 verbose parsed url   search: null,
+122 verbose parsed url   query: null,
+122 verbose parsed url   pathname: 'nconf@~0.6.9',
+122 verbose parsed url   path: 'nconf@~0.6.9',
+122 verbose parsed url   href: 'nconf@~0.6.9' }
+123 verbose cache add name="forever-monitor" spec="~1.5.1" args=["forever-monitor","~1.5.1"]
+124 verbose parsed url { protocol: null,
+124 verbose parsed url   slashes: null,
+124 verbose parsed url   auth: null,
+124 verbose parsed url   host: null,
+124 verbose parsed url   port: null,
+124 verbose parsed url   hostname: null,
+124 verbose parsed url   hash: null,
+124 verbose parsed url   search: null,
+124 verbose parsed url   query: null,
+124 verbose parsed url   pathname: '~1.5.1',
+124 verbose parsed url   path: '~1.5.1',
+124 verbose parsed url   href: '~1.5.1' }
+125 verbose addNamed [ 'forever-monitor', '~1.5.1' ]
+126 verbose addNamed [ null, '>=1.5.1-0 <1.6.0-0' ]
+127 silly lockFile bcffa7b6-forever-monitor-1-5-1 forever-monitor@~1.5.1
+128 verbose lock forever-monitor@~1.5.1 /Users/xTalandier/.npm/bcffa7b6-forever-monitor-1-5-1.lock
+129 silly addNameRange { name: 'colors', range: '>=0.6.2-0 <0.7.0-0', hasData: false }
+130 silly addNameRange { name: 'cliff', range: '>=0.1.9-0 <0.2.0-0', hasData: false }
+131 silly addNameRange { name: 'flatiron', range: '>=0.4.2-0 <0.5.0-0', hasData: false }
+132 verbose cache add name="nconf" spec="~0.6.9" args=["nconf","~0.6.9"]
+133 verbose parsed url { protocol: null,
+133 verbose parsed url   slashes: null,
+133 verbose parsed url   auth: null,
+133 verbose parsed url   host: null,
+133 verbose parsed url   port: null,
+133 verbose parsed url   hostname: null,
+133 verbose parsed url   hash: null,
+133 verbose parsed url   search: null,
+133 verbose parsed url   query: null,
+133 verbose parsed url   pathname: '~0.6.9',
+133 verbose parsed url   path: '~0.6.9',
+133 verbose parsed url   href: '~0.6.9' }
+134 verbose addNamed [ 'nconf', '~0.6.9' ]
+135 verbose addNamed [ null, '>=0.6.9-0 <0.7.0-0' ]
+136 silly lockFile eb32f077-nconf-0-6-9 nconf@~0.6.9
+137 verbose lock nconf@~0.6.9 /Users/xTalandier/.npm/eb32f077-nconf-0-6-9.lock
+138 verbose cache add [ 'nssocket@~0.5.1', null ]
+139 verbose cache add name=undefined spec="nssocket@~0.5.1" args=["nssocket@~0.5.1",null]
+140 verbose parsed url { protocol: null,
+140 verbose parsed url   slashes: null,
+140 verbose parsed url   auth: null,
+140 verbose parsed url   host: null,
+140 verbose parsed url   port: null,
+140 verbose parsed url   hostname: null,
+140 verbose parsed url   hash: null,
+140 verbose parsed url   search: null,
+140 verbose parsed url   query: null,
+140 verbose parsed url   pathname: 'nssocket@~0.5.1',
+140 verbose parsed url   path: 'nssocket@~0.5.1',
+140 verbose parsed url   href: 'nssocket@~0.5.1' }
+141 verbose cache add [ 'optimist@~0.6.0', null ]
+142 verbose cache add name=undefined spec="optimist@~0.6.0" args=["optimist@~0.6.0",null]
+143 verbose parsed url { protocol: null,
+143 verbose parsed url   slashes: null,
+143 verbose parsed url   auth: null,
+143 verbose parsed url   host: null,
+143 verbose parsed url   port: null,
+143 verbose parsed url   hostname: null,
+143 verbose parsed url   hash: null,
+143 verbose parsed url   search: null,
+143 verbose parsed url   query: null,
+143 verbose parsed url   pathname: 'optimist@~0.6.0',
+143 verbose parsed url   path: 'optimist@~0.6.0',
+143 verbose parsed url   href: 'optimist@~0.6.0' }
+144 verbose cache add name="nssocket" spec="~0.5.1" args=["nssocket","~0.5.1"]
+145 verbose parsed url { protocol: null,
+145 verbose parsed url   slashes: null,
+145 verbose parsed url   auth: null,
+145 verbose parsed url   host: null,
+145 verbose parsed url   port: null,
+145 verbose parsed url   hostname: null,
+145 verbose parsed url   hash: null,
+145 verbose parsed url   search: null,
+145 verbose parsed url   query: null,
+145 verbose parsed url   pathname: '~0.5.1',
+145 verbose parsed url   path: '~0.5.1',
+145 verbose parsed url   href: '~0.5.1' }
+146 verbose addNamed [ 'nssocket', '~0.5.1' ]
+147 verbose addNamed [ null, '>=0.5.1-0 <0.6.0-0' ]
+148 silly lockFile 936c2de0-nssocket-0-5-1 nssocket@~0.5.1
+149 verbose lock nssocket@~0.5.1 /Users/xTalandier/.npm/936c2de0-nssocket-0-5-1.lock
+150 verbose cache add name="optimist" spec="~0.6.0" args=["optimist","~0.6.0"]
+151 verbose parsed url { protocol: null,
+151 verbose parsed url   slashes: null,
+151 verbose parsed url   auth: null,
+151 verbose parsed url   host: null,
+151 verbose parsed url   port: null,
+151 verbose parsed url   hostname: null,
+151 verbose parsed url   hash: null,
+151 verbose parsed url   search: null,
+151 verbose parsed url   query: null,
+151 verbose parsed url   pathname: '~0.6.0',
+151 verbose parsed url   path: '~0.6.0',
+151 verbose parsed url   href: '~0.6.0' }
+152 verbose addNamed [ 'optimist', '~0.6.0' ]
+153 verbose addNamed [ null, '>=0.6.0-0 <0.7.0-0' ]
+154 silly lockFile 07193858-optimist-0-6-0 optimist@~0.6.0
+155 verbose lock optimist@~0.6.0 /Users/xTalandier/.npm/07193858-optimist-0-6-0.lock
+156 verbose cache add [ 'timespan@~2.3.0', null ]
+157 verbose cache add name=undefined spec="timespan@~2.3.0" args=["timespan@~2.3.0",null]
+158 verbose parsed url { protocol: null,
+158 verbose parsed url   slashes: null,
+158 verbose parsed url   auth: null,
+158 verbose parsed url   host: null,
+158 verbose parsed url   port: null,
+158 verbose parsed url   hostname: null,
+158 verbose parsed url   hash: null,
+158 verbose parsed url   search: null,
+158 verbose parsed url   query: null,
+158 verbose parsed url   pathname: 'timespan@~2.3.0',
+158 verbose parsed url   path: 'timespan@~2.3.0',
+158 verbose parsed url   href: 'timespan@~2.3.0' }
+159 silly addNameRange { name: 'forever-monitor',
+159 silly addNameRange   range: '>=1.5.1-0 <1.6.0-0',
+159 silly addNameRange   hasData: false }
+160 silly addNameRange { name: 'nconf', range: '>=0.6.9-0 <0.7.0-0', hasData: false }
+161 verbose cache add [ 'utile@~0.2.1', null ]
+162 verbose cache add name=undefined spec="utile@~0.2.1" args=["utile@~0.2.1",null]
+163 verbose parsed url { protocol: null,
+163 verbose parsed url   slashes: null,
+163 verbose parsed url   auth: null,
+163 verbose parsed url   host: null,
+163 verbose parsed url   port: null,
+163 verbose parsed url   hostname: null,
+163 verbose parsed url   hash: null,
+163 verbose parsed url   search: null,
+163 verbose parsed url   query: null,
+163 verbose parsed url   pathname: 'utile@~0.2.1',
+163 verbose parsed url   path: 'utile@~0.2.1',
+163 verbose parsed url   href: 'utile@~0.2.1' }
+164 verbose cache add [ 'winston@~0.8.1', null ]
+165 verbose cache add name=undefined spec="winston@~0.8.1" args=["winston@~0.8.1",null]
+166 verbose parsed url { protocol: null,
+166 verbose parsed url   slashes: null,
+166 verbose parsed url   auth: null,
+166 verbose parsed url   host: null,
+166 verbose parsed url   port: null,
+166 verbose parsed url   hostname: null,
+166 verbose parsed url   hash: null,
+166 verbose parsed url   search: null,
+166 verbose parsed url   query: null,
+166 verbose parsed url   pathname: 'winston@~0.8.1',
+166 verbose parsed url   path: 'winston@~0.8.1',
+166 verbose parsed url   href: 'winston@~0.8.1' }
+167 verbose cache add name="timespan" spec="~2.3.0" args=["timespan","~2.3.0"]
+168 verbose parsed url { protocol: null,
+168 verbose parsed url   slashes: null,
+168 verbose parsed url   auth: null,
+168 verbose parsed url   host: null,
+168 verbose parsed url   port: null,
+168 verbose parsed url   hostname: null,
+168 verbose parsed url   hash: null,
+168 verbose parsed url   search: null,
+168 verbose parsed url   query: null,
+168 verbose parsed url   pathname: '~2.3.0',
+168 verbose parsed url   path: '~2.3.0',
+168 verbose parsed url   href: '~2.3.0' }
+169 verbose addNamed [ 'timespan', '~2.3.0' ]
+170 verbose addNamed [ null, '>=2.3.0-0 <2.4.0-0' ]
+171 silly lockFile 572eaef7-timespan-2-3-0 timespan@~2.3.0
+172 verbose lock timespan@~2.3.0 /Users/xTalandier/.npm/572eaef7-timespan-2-3-0.lock
+173 silly addNameRange { name: 'nssocket', range: '>=0.5.1-0 <0.6.0-0', hasData: false }
+174 silly addNameRange { name: 'optimist', range: '>=0.6.0-0 <0.7.0-0', hasData: false }
+175 verbose cache add name="utile" spec="~0.2.1" args=["utile","~0.2.1"]
+176 verbose parsed url { protocol: null,
+176 verbose parsed url   slashes: null,
+176 verbose parsed url   auth: null,
+176 verbose parsed url   host: null,
+176 verbose parsed url   port: null,
+176 verbose parsed url   hostname: null,
+176 verbose parsed url   hash: null,
+176 verbose parsed url   search: null,
+176 verbose parsed url   query: null,
+176 verbose parsed url   pathname: '~0.2.1',
+176 verbose parsed url   path: '~0.2.1',
+176 verbose parsed url   href: '~0.2.1' }
+177 verbose addNamed [ 'utile', '~0.2.1' ]
+178 verbose addNamed [ null, '>=0.2.1-0 <0.3.0-0' ]
+179 silly lockFile 642d3b0d-utile-0-2-1 utile@~0.2.1
+180 verbose lock utile@~0.2.1 /Users/xTalandier/.npm/642d3b0d-utile-0-2-1.lock
+181 verbose cache add name="winston" spec="~0.8.1" args=["winston","~0.8.1"]
+182 verbose parsed url { protocol: null,
+182 verbose parsed url   slashes: null,
+182 verbose parsed url   auth: null,
+182 verbose parsed url   host: null,
+182 verbose parsed url   port: null,
+182 verbose parsed url   hostname: null,
+182 verbose parsed url   hash: null,
+182 verbose parsed url   search: null,
+182 verbose parsed url   query: null,
+182 verbose parsed url   pathname: '~0.8.1',
+182 verbose parsed url   path: '~0.8.1',
+182 verbose parsed url   href: '~0.8.1' }
+183 verbose addNamed [ 'winston', '~0.8.1' ]
+184 verbose addNamed [ null, '>=0.8.1-0 <0.9.0-0' ]
+185 silly lockFile 90cdea45-winston-0-8-1 winston@~0.8.1
+186 verbose lock winston@~0.8.1 /Users/xTalandier/.npm/90cdea45-winston-0-8-1.lock
+187 silly addNameRange { name: 'timespan', range: '>=2.3.0-0 <2.4.0-0', hasData: false }
+188 verbose registry.get https://registry.npmjs.org/colors not expired, no request
+189 silly addNameRange number 2 { name: 'colors', range: '>=0.6.2-0 <0.7.0-0', hasData: true }
+190 silly addNameRange versions [ 'colors',
+190 silly addNameRange   [ '0.3.0',
+190 silly addNameRange     '0.5.0',
+190 silly addNameRange     '0.5.1',
+190 silly addNameRange     '0.6.0',
+190 silly addNameRange     '0.6.0-1',
+190 silly addNameRange     '0.6.1',
+190 silly addNameRange     '0.6.2',
+190 silly addNameRange     '1.0.0',
+190 silly addNameRange     '1.0.1',
+190 silly addNameRange     '1.0.2',
+190 silly addNameRange     '1.0.3' ] ]
+191 verbose addNamed [ 'colors', '0.6.2' ]
+192 verbose addNamed [ '0.6.2', '0.6.2' ]
+193 silly lockFile 1ce149d5-colors-0-6-2 colors@0.6.2
+194 verbose lock colors@0.6.2 /Users/xTalandier/.npm/1ce149d5-colors-0-6-2.lock
+195 verbose registry.get https://registry.npmjs.org/cliff not expired, no request
+196 silly addNameRange number 2 { name: 'cliff', range: '>=0.1.9-0 <0.2.0-0', hasData: true }
+197 silly addNameRange versions [ 'cliff',
+197 silly addNameRange   [ '0.1.0',
+197 silly addNameRange     '0.1.1',
+197 silly addNameRange     '0.1.2',
+197 silly addNameRange     '0.1.3',
+197 silly addNameRange     '0.1.4',
+197 silly addNameRange     '0.1.5',
+197 silly addNameRange     '0.1.6',
+197 silly addNameRange     '0.1.7',
+197 silly addNameRange     '0.1.8',
+197 silly addNameRange     '0.1.9',
+197 silly addNameRange     '0.1.10' ] ]
+198 verbose addNamed [ 'cliff', '0.1.10' ]
+199 verbose addNamed [ '0.1.10', '0.1.10' ]
+200 silly lockFile 730f6d59-cliff-0-1-10 cliff@0.1.10
+201 verbose lock cliff@0.1.10 /Users/xTalandier/.npm/730f6d59-cliff-0-1-10.lock
+202 verbose registry.get https://registry.npmjs.org/flatiron not expired, no request
+203 silly addNameRange number 2 { name: 'flatiron', range: '>=0.4.2-0 <0.5.0-0', hasData: true }
+204 silly addNameRange versions [ 'flatiron',
+204 silly addNameRange   [ '0.1.2',
+204 silly addNameRange     '0.1.3',
+204 silly addNameRange     '0.1.4',
+204 silly addNameRange     '0.1.5',
+204 silly addNameRange     '0.1.5-1',
+204 silly addNameRange     '0.1.6',
+204 silly addNameRange     '0.1.7',
+204 silly addNameRange     '0.1.7-1',
+204 silly addNameRange     '0.1.8',
+204 silly addNameRange     '0.1.9',
+204 silly addNameRange     '0.1.10',
+204 silly addNameRange     '0.1.11',
+204 silly addNameRange     '0.1.12',
+204 silly addNameRange     '0.1.12-1',
+204 silly addNameRange     '0.1.13',
+204 silly addNameRange     '0.1.14',
+204 silly addNameRange     '0.1.15',
+204 silly addNameRange     '0.1.16',
+204 silly addNameRange     '0.1.17',
+204 silly addNameRange     '0.2.0',
+204 silly addNameRange     '0.2.1',
+204 silly addNameRange     '0.2.2',
+204 silly addNameRange     '0.2.3',
+204 silly addNameRange     '0.2.4',
+204 silly addNameRange     '0.2.5',
+204 silly addNameRange     '0.2.6',
+204 silly addNameRange     '0.2.7',
+204 silly addNameRange     '0.2.8',
+204 silly addNameRange     '0.3.0',
+204 silly addNameRange     '0.3.2',
+204 silly addNameRange     '0.3.3',
+204 silly addNameRange     '0.3.4',
+204 silly addNameRange     '0.3.5',
+204 silly addNameRange     '0.3.6',
+204 silly addNameRange     '0.3.7',
+204 silly addNameRange     '0.3.8',
+204 silly addNameRange     '0.3.9',
+204 silly addNameRange     '0.3.10',
+204 silly addNameRange     '0.3.11',
+204 silly addNameRange     '0.4.0',
+204 silly addNameRange     '0.4.1',
+204 silly addNameRange     '0.4.2',
+204 silly addNameRange     '0.4.3' ] ]
+205 verbose addNamed [ 'flatiron', '0.4.3' ]
+206 verbose addNamed [ '0.4.3', '0.4.3' ]
+207 silly lockFile bf69675c-flatiron-0-4-3 flatiron@0.4.3
+208 verbose lock flatiron@0.4.3 /Users/xTalandier/.npm/bf69675c-flatiron-0-4-3.lock
+209 silly addNameRange { name: 'utile', range: '>=0.2.1-0 <0.3.0-0', hasData: false }
+210 silly addNameRange { name: 'winston', range: '>=0.8.1-0 <0.9.0-0', hasData: false }
+211 verbose registry.get https://registry.npmjs.org/forever-monitor not expired, no request
+212 silly addNameRange number 2 { name: 'forever-monitor',
+212 silly addNameRange   range: '>=1.5.1-0 <1.6.0-0',
+212 silly addNameRange   hasData: true }
+213 silly addNameRange versions [ 'forever-monitor',
+213 silly addNameRange   [ '1.0.0',
+213 silly addNameRange     '1.0.1',
+213 silly addNameRange     '1.0.2',
+213 silly addNameRange     '1.1.0',
+213 silly addNameRange     '1.2.0',
+213 silly addNameRange     '1.2.1',
+213 silly addNameRange     '1.2.2',
+213 silly addNameRange     '1.2.3',
+213 silly addNameRange     '1.2.4',
+213 silly addNameRange     '1.3.0',
+213 silly addNameRange     '1.4.0',
+213 silly addNameRange     '1.5.0',
+213 silly addNameRange     '1.5.1',
+213 silly addNameRange     '1.5.2' ] ]
+214 verbose addNamed [ 'forever-monitor', '1.5.2' ]
+215 verbose addNamed [ '1.5.2', '1.5.2' ]
+216 silly lockFile ac85d3a7-forever-monitor-1-5-2 forever-monitor@1.5.2
+217 verbose lock forever-monitor@1.5.2 /Users/xTalandier/.npm/ac85d3a7-forever-monitor-1-5-2.lock
+218 verbose registry.get https://registry.npmjs.org/nconf not expired, no request
+219 silly addNameRange number 2 { name: 'nconf', range: '>=0.6.9-0 <0.7.0-0', hasData: true }
+220 silly addNameRange versions [ 'nconf',
+220 silly addNameRange   [ '0.1.14',
+220 silly addNameRange     '0.2.0',
+220 silly addNameRange     '0.3.1',
+220 silly addNameRange     '0.4.3',
+220 silly addNameRange     '0.4.4',
+220 silly addNameRange     '0.4.5',
+220 silly addNameRange     '0.4.6',
+220 silly addNameRange     '0.5.0',
+220 silly addNameRange     '0.5.1',
+220 silly addNameRange     '0.6.0',
+220 silly addNameRange     '0.6.1',
+220 silly addNameRange     '0.6.3',
+220 silly addNameRange     '0.6.4',
+220 silly addNameRange     '0.6.5',
+220 silly addNameRange     '0.6.6',
+220 silly addNameRange     '0.6.7',
+220 silly addNameRange     '0.6.8',
+220 silly addNameRange     '0.6.9',
+220 silly addNameRange     '0.7.0',
+220 silly addNameRange     '0.7.1' ] ]
+221 verbose addNamed [ 'nconf', '0.6.9' ]
+222 verbose addNamed [ '0.6.9', '0.6.9' ]
+223 silly lockFile 66fbcb14-nconf-0-6-9 nconf@0.6.9
+224 verbose lock nconf@0.6.9 /Users/xTalandier/.npm/66fbcb14-nconf-0-6-9.lock
+225 verbose registry.get https://registry.npmjs.org/nssocket not expired, no request
+226 silly addNameRange number 2 { name: 'nssocket', range: '>=0.5.1-0 <0.6.0-0', hasData: true }
+227 silly addNameRange versions [ 'nssocket',
+227 silly addNameRange   [ '0.1.0',
+227 silly addNameRange     '0.1.1',
+227 silly addNameRange     '0.2.0',
+227 silly addNameRange     '0.2.1',
+227 silly addNameRange     '0.2.2',
+227 silly addNameRange     '0.2.3',
+227 silly addNameRange     '0.2.4',
+227 silly addNameRange     '0.2.5',
+227 silly addNameRange     '0.2.5-1',
+227 silly addNameRange     '0.3.0',
+227 silly addNameRange     '0.3.1',
+227 silly addNameRange     '0.3.2',
+227 silly addNameRange     '0.3.3',
+227 silly addNameRange     '0.3.4',
+227 silly addNameRange     '0.3.5',
+227 silly addNameRange     '0.3.6',
+227 silly addNameRange     '0.3.7',
+227 silly addNameRange     '0.3.8',
+227 silly addNameRange     '0.4.0',
+227 silly addNameRange     '0.5.0',
+227 silly addNameRange     '0.5.1',
+227 silly addNameRange     '0.5.2',
+227 silly addNameRange     '0.5.3' ] ]
+228 verbose addNamed [ 'nssocket', '0.5.3' ]
+229 verbose addNamed [ '0.5.3', '0.5.3' ]
+230 silly lockFile d0a7cf92-nssocket-0-5-3 nssocket@0.5.3
+231 verbose lock nssocket@0.5.3 /Users/xTalandier/.npm/d0a7cf92-nssocket-0-5-3.lock
+232 verbose registry.get https://registry.npmjs.org/optimist not expired, no request
+233 silly addNameRange number 2 { name: 'optimist', range: '>=0.6.0-0 <0.7.0-0', hasData: true }
+234 silly addNameRange versions [ 'optimist',
+234 silly addNameRange   [ '0.0.1',
+234 silly addNameRange     '0.0.2',
+234 silly addNameRange     '0.0.4',
+234 silly addNameRange     '0.0.5',
+234 silly addNameRange     '0.0.6',
+234 silly addNameRange     '0.0.7',
+234 silly addNameRange     '0.1.0',
+234 silly addNameRange     '0.1.1',
+234 silly addNameRange     '0.1.2',
+234 silly addNameRange     '0.1.3',
+234 silly addNameRange     '0.1.4',
+234 silly addNameRange     '0.1.5',
+234 silly addNameRange     '0.1.6',
+234 silly addNameRange     '0.1.7',
+234 silly addNameRange     '0.1.8',
+234 silly addNameRange     '0.1.9',
+234 silly addNameRange     '0.0.3',
+234 silly addNameRange     '0.2.0',
+234 silly addNameRange     '0.2.1',
+234 silly addNameRange     '0.2.2',
+234 silly addNameRange     '0.2.3',
+234 silly addNameRange     '0.2.4',
+234 silly addNameRange     '0.2.5',
+234 silly addNameRange     '0.2.6',
+234 silly addNameRange     '0.2.7',
+234 silly addNameRange     '0.2.8',
+234 silly addNameRange     '0.3.0',
+234 silly addNameRange     '0.3.1',
+234 silly addNameRange     '0.3.3',
+234 silly addNameRange     '0.3.4',
+234 silly addNameRange     '0.3.5',
+234 silly addNameRange     '0.3.6',
+234 silly addNameRange     '0.3.7',
+234 silly addNameRange     '0.4.0',
+234 silly addNameRange     '0.5.0',
+234 silly addNameRange     '0.5.1',
+234 silly addNameRange     '0.5.2',
+234 silly addNameRange     '0.6.0',
+234 silly addNameRange     '0.6.1' ] ]
+235 verbose addNamed [ 'optimist', '0.6.1' ]
+236 verbose addNamed [ '0.6.1', '0.6.1' ]
+237 silly lockFile 0fc74eb8-optimist-0-6-1 optimist@0.6.1
+238 verbose lock optimist@0.6.1 /Users/xTalandier/.npm/0fc74eb8-optimist-0-6-1.lock
+239 verbose registry.get https://registry.npmjs.org/timespan not expired, no request
+240 silly addNameRange number 2 { name: 'timespan', range: '>=2.3.0-0 <2.4.0-0', hasData: true }
+241 silly addNameRange versions [ 'timespan', [ '2.0.0', '2.0.1', '2.1.0', '2.2.0', '2.3.0' ] ]
+242 verbose addNamed [ 'timespan', '2.3.0' ]
+243 verbose addNamed [ '2.3.0', '2.3.0' ]
+244 silly lockFile dabd98fe-timespan-2-3-0 timespan@2.3.0
+245 verbose lock timespan@2.3.0 /Users/xTalandier/.npm/dabd98fe-timespan-2-3-0.lock
+246 verbose registry.get https://registry.npmjs.org/utile not expired, no request
+247 silly addNameRange number 2 { name: 'utile', range: '>=0.2.1-0 <0.3.0-0', hasData: true }
+248 silly addNameRange versions [ 'utile',
+248 silly addNameRange   [ '0.0.1',
+248 silly addNameRange     '0.0.2',
+248 silly addNameRange     '0.0.3',
+248 silly addNameRange     '0.0.4',
+248 silly addNameRange     '0.0.5',
+248 silly addNameRange     '0.0.6',
+248 silly addNameRange     '0.0.8',
+248 silly addNameRange     '0.0.9',
+248 silly addNameRange     '0.0.10',
+248 silly addNameRange     '0.1.0',
+248 silly addNameRange     '0.1.1',
+248 silly addNameRange     '0.1.2',
+248 silly addNameRange     '0.1.3',
+248 silly addNameRange     '0.1.5',
+248 silly addNameRange     '0.1.6',
+248 silly addNameRange     '0.1.7',
+248 silly addNameRange     '0.2.0',
+248 silly addNameRange     '0.2.1',
+248 silly addNameRange     '0.3.0' ] ]
+249 verbose addNamed [ 'utile', '0.2.1' ]
+250 verbose addNamed [ '0.2.1', '0.2.1' ]
+251 silly lockFile 4b19b9b2-utile-0-2-1 utile@0.2.1
+252 verbose lock utile@0.2.1 /Users/xTalandier/.npm/4b19b9b2-utile-0-2-1.lock
+253 verbose registry.get https://registry.npmjs.org/winston not expired, no request
+254 silly addNameRange number 2 { name: 'winston', range: '>=0.8.1-0 <0.9.0-0', hasData: true }
+255 silly addNameRange versions [ 'winston',
+255 silly addNameRange   [ '0.2.11',
+255 silly addNameRange     '0.3.3',
+255 silly addNameRange     '0.3.4',
+255 silly addNameRange     '0.3.5',
+255 silly addNameRange     '0.4.0',
+255 silly addNameRange     '0.4.1',
+255 silly addNameRange     '0.5.0',
+255 silly addNameRange     '0.5.1',
+255 silly addNameRange     '0.5.2',
+255 silly addNameRange     '0.5.3',
+255 silly addNameRange     '0.5.4',
+255 silly addNameRange     '0.5.5',
+255 silly addNameRange     '0.5.6',
+255 silly addNameRange     '0.5.7',
+255 silly addNameRange     '0.5.8',
+255 silly addNameRange     '0.5.9',
+255 silly addNameRange     '0.5.10',
+255 silly addNameRange     '0.5.11',
+255 silly addNameRange     '0.6.1',
+255 silly addNameRange     '0.6.2',
+255 silly addNameRange     '0.7.0',
+255 silly addNameRange     '0.7.1',
+255 silly addNameRange     '0.7.2',
+255 silly addNameRange     '0.7.3',
+255 silly addNameRange     '0.8.0',
+255 silly addNameRange     '0.8.1',
+255 silly addNameRange     '0.8.2',
+255 silly addNameRange     '0.8.3',
+255 silly addNameRange     '0.9.0',
+255 silly addNameRange     '1.0.0' ] ]
+256 verbose addNamed [ 'winston', '0.8.3' ]
+257 verbose addNamed [ '0.8.3', '0.8.3' ]
+258 silly lockFile c3fdbb33-winston-0-8-3 winston@0.8.3
+259 verbose lock winston@0.8.3 /Users/xTalandier/.npm/c3fdbb33-winston-0-8-3.lock
+260 silly lockFile 1ce149d5-colors-0-6-2 colors@0.6.2
+261 silly lockFile 1ce149d5-colors-0-6-2 colors@0.6.2
+262 silly lockFile 730f6d59-cliff-0-1-10 cliff@0.1.10
+263 silly lockFile 730f6d59-cliff-0-1-10 cliff@0.1.10
+264 silly lockFile bf69675c-flatiron-0-4-3 flatiron@0.4.3
+265 silly lockFile bf69675c-flatiron-0-4-3 flatiron@0.4.3
+266 silly lockFile f2380b4d-colors-0-6-2 colors@~0.6.2
+267 silly lockFile f2380b4d-colors-0-6-2 colors@~0.6.2
+268 silly lockFile f56c4ca5-cliff-0-1-9 cliff@~0.1.9
+269 silly lockFile f56c4ca5-cliff-0-1-9 cliff@~0.1.9
+270 silly lockFile 3b4d8e9c-flatiron-0-4-2 flatiron@~0.4.2
+271 silly lockFile 3b4d8e9c-flatiron-0-4-2 flatiron@~0.4.2
+272 silly lockFile ac85d3a7-forever-monitor-1-5-2 forever-monitor@1.5.2
+273 silly lockFile ac85d3a7-forever-monitor-1-5-2 forever-monitor@1.5.2
+274 silly lockFile 66fbcb14-nconf-0-6-9 nconf@0.6.9
+275 silly lockFile 66fbcb14-nconf-0-6-9 nconf@0.6.9
+276 silly lockFile bcffa7b6-forever-monitor-1-5-1 forever-monitor@~1.5.1
+277 silly lockFile bcffa7b6-forever-monitor-1-5-1 forever-monitor@~1.5.1
+278 silly lockFile eb32f077-nconf-0-6-9 nconf@~0.6.9
+279 silly lockFile eb32f077-nconf-0-6-9 nconf@~0.6.9
+280 silly lockFile d0a7cf92-nssocket-0-5-3 nssocket@0.5.3
+281 silly lockFile d0a7cf92-nssocket-0-5-3 nssocket@0.5.3
+282 silly lockFile 0fc74eb8-optimist-0-6-1 optimist@0.6.1
+283 silly lockFile 0fc74eb8-optimist-0-6-1 optimist@0.6.1
+284 silly lockFile 936c2de0-nssocket-0-5-1 nssocket@~0.5.1
+285 silly lockFile 936c2de0-nssocket-0-5-1 nssocket@~0.5.1
+286 silly lockFile 07193858-optimist-0-6-0 optimist@~0.6.0
+287 silly lockFile 07193858-optimist-0-6-0 optimist@~0.6.0
+288 silly lockFile dabd98fe-timespan-2-3-0 timespan@2.3.0
+289 silly lockFile dabd98fe-timespan-2-3-0 timespan@2.3.0
+290 silly lockFile 4b19b9b2-utile-0-2-1 utile@0.2.1
+291 silly lockFile 4b19b9b2-utile-0-2-1 utile@0.2.1
+292 silly lockFile 572eaef7-timespan-2-3-0 timespan@~2.3.0
+293 silly lockFile 572eaef7-timespan-2-3-0 timespan@~2.3.0
+294 silly lockFile c3fdbb33-winston-0-8-3 winston@0.8.3
+295 silly lockFile c3fdbb33-winston-0-8-3 winston@0.8.3
+296 silly lockFile 642d3b0d-utile-0-2-1 utile@~0.2.1
+297 silly lockFile 642d3b0d-utile-0-2-1 utile@~0.2.1
+298 silly lockFile 90cdea45-winston-0-8-1 winston@~0.8.1
+299 silly lockFile 90cdea45-winston-0-8-1 winston@~0.8.1
+300 silly resolved [ { name: 'colors',
+300 silly resolved     description: 'get colors in your node.js console like what',
+300 silly resolved     version: '0.6.2',
+300 silly resolved     author: { name: 'Marak Squires' },
+300 silly resolved     homepage: 'https://github.com/Marak/colors.js',
+300 silly resolved     bugs: { url: 'https://github.com/Marak/colors.js/issues' },
+300 silly resolved     keywords: [ 'ansi', 'terminal', 'colors' ],
+300 silly resolved     repository: { type: 'git', url: 'http://github.com/Marak/colors.js.git' },
+300 silly resolved     engines: { node: '>=0.1.90' },
+300 silly resolved     main: 'colors',
+300 silly resolved     _id: 'colors@0.6.2',
+300 silly resolved     dist:
+300 silly resolved      { shasum: '2423fe6678ac0c5dae8852e5d0e5be08c997abcc',
+300 silly resolved        tarball: 'http://registry.npmjs.org/colors/-/colors-0.6.2.tgz' },
+300 silly resolved     _from: 'colors@~0.6.2',
+300 silly resolved     _npmVersion: '1.2.30',
+300 silly resolved     _npmUser: { name: 'marak', email: 'marak.squires@gmail.com' },
+300 silly resolved     maintainers: [ [Object] ],
+300 silly resolved     directories: {},
+300 silly resolved     _shasum: '2423fe6678ac0c5dae8852e5d0e5be08c997abcc',
+300 silly resolved     _resolved: 'https://registry.npmjs.org/colors/-/colors-0.6.2.tgz',
+300 silly resolved     readme: 'ERROR: No README data found!' },
+300 silly resolved   { name: 'cliff',
+300 silly resolved     description: 'Your CLI formatting friend.',
+300 silly resolved     version: '0.1.10',
+300 silly resolved     author: { name: 'Charlie Robbins', email: 'charlie.robbins@gmail.com' },
+300 silly resolved     repository: { type: 'git', url: 'http://github.com/flatiron/cliff.git' },
+300 silly resolved     keywords: [ 'cli', 'logging', 'tools', 'winston' ],
+300 silly resolved     dependencies: { colors: '~1.0.3', eyes: '~0.1.8', winston: '0.8.x' },
+300 silly resolved     devDependencies: { vows: '0.8.x' },
+300 silly resolved     main: './lib/cliff',
+300 silly resolved     scripts: { test: 'vows test/*-test.js --spec' },
+300 silly resolved     engines: { node: '>= 0.4.0' },
+300 silly resolved     gitHead: '3baf40a73432a26303f080176c7d13fe293bc1d8',
+300 silly resolved     bugs: { url: 'https://github.com/flatiron/cliff/issues' },
+300 silly resolved     homepage: 'https://github.com/flatiron/cliff',
+300 silly resolved     _id: 'cliff@0.1.10',
+300 silly resolved     _shasum: '53be33ea9f59bec85609ee300ac4207603e52013',
+300 silly resolved     _from: 'cliff@~0.1.9',
+300 silly resolved     _npmVersion: '2.1.9',
+300 silly resolved     _nodeVersion: '0.10.33',
+300 silly resolved     _npmUser: { name: 'indexzero', email: 'charlie.robbins@gmail.com' },
+300 silly resolved     maintainers: [ [Object], [Object] ],
+300 silly resolved     dist:
+300 silly resolved      { shasum: '53be33ea9f59bec85609ee300ac4207603e52013',
+300 silly resolved        tarball: 'http://registry.npmjs.org/cliff/-/cliff-0.1.10.tgz' },
+300 silly resolved     directories: {},
+300 silly resolved     _resolved: 'https://registry.npmjs.org/cliff/-/cliff-0.1.10.tgz',
+300 silly resolved     readme: 'ERROR: No README data found!' },
+300 silly resolved   { name: 'flatiron',
+300 silly resolved     description: 'An elegant blend of convention and configuration for building apps in Node.js and the browser',
+300 silly resolved     version: '0.4.3',
+300 silly resolved     author: { name: 'Nodejitsu Inc.', email: 'info@nodejitsu.com' },
+300 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+300 silly resolved     repository: { type: 'git', url: 'http://github.com/flatiron/flatiron.git' },
+300 silly resolved     dependencies:
+300 silly resolved      { broadway: '~0.3.2',
+300 silly resolved        optimist: '0.6.0',
+300 silly resolved        prompt: '0.2.14',
+300 silly resolved        director: '1.2.7' },
+300 silly resolved     devDependencies:
+300 silly resolved      { st: '0.1.x',
+300 silly resolved        request: '2.x.x',
+300 silly resolved        resourceful: '0.3.x',
+300 silly resolved        union: '0.4.x',
+300 silly resolved        vows: '0.7.x' },
+300 silly resolved     main: './lib/flatiron',
+300 silly resolved     bin: { flatiron: './bin/flatiron' },
+300 silly resolved     scripts: { test: 'vows --spec' },
+300 silly resolved     engines: { node: '>= 0.4.0' },
+300 silly resolved     gitHead: '0182515b94b1fc7bd76378d42db1033ecfa44b96',
+300 silly resolved     bugs: { url: 'https://github.com/flatiron/flatiron/issues' },
+300 silly resolved     homepage: 'https://github.com/flatiron/flatiron',
+300 silly resolved     _id: 'flatiron@0.4.3',
+300 silly resolved     _shasum: '248cf79a3da7d7dc379e2a11c92a2719cbb540f6',
+300 silly resolved     _from: 'flatiron@~0.4.2',
+300 silly resolved     _npmVersion: '1.4.23',
+300 silly resolved     _npmUser: { name: 'swaagie', email: 'info@martijnswaagman.nl' },
+300 silly resolved     dist:
+300 silly resolved      { shasum: '248cf79a3da7d7dc379e2a11c92a2719cbb540f6',
+300 silly resolved        tarball: 'http://registry.npmjs.org/flatiron/-/flatiron-0.4.3.tgz' },
+300 silly resolved     directories: {},
+300 silly resolved     _resolved: 'https://registry.npmjs.org/flatiron/-/flatiron-0.4.3.tgz',
+300 silly resolved     readme: 'ERROR: No README data found!' },
+300 silly resolved   { name: 'forever-monitor',
+300 silly resolved     description: 'Core forever process monitor',
+300 silly resolved     version: '1.5.2',
+300 silly resolved     author: { name: 'Charlie Robbins', email: 'charlie.robbins@gmail.com' },
+300 silly resolved     contributors: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+300 silly resolved     repository:
+300 silly resolved      { type: 'git',
+300 silly resolved        url: 'http://github.com/nodejitsu/forever-monitor.git' },
+300 silly resolved     keywords: [ 'fault tolerant', 'sysadmin', 'tools' ],
+300 silly resolved     dependencies:
+300 silly resolved      { broadway: '~0.3.6',
+300 silly resolved        minimatch: '~1.0.0',
+300 silly resolved        'ps-tree': '0.0.x',
+300 silly resolved        watch: '~0.13.0',
+300 silly resolved        utile: '~0.2.1' },
+300 silly resolved     devDependencies: { optimist: '~0.6.1', vows: '~0.7.0' },
+300 silly resolved     main: './lib/index.js',
+300 silly resolved     scripts: { test: 'vows test/**/*-test.js --spec -i' },
+300 silly resolved     engines: { node: '>= 0.8.x' },
+300 silly resolved     gitHead: 'bf05393682db13bffa606180e13aade15229a388',
+300 silly resolved     bugs: { url: 'https://github.com/nodejitsu/forever-monitor/issues' },
+300 silly resolved     homepage: 'https://github.com/nodejitsu/forever-monitor',
+300 silly resolved     _id: 'forever-monitor@1.5.2',
+300 silly resolved     _shasum: '279388dfa93b085363d6b28a823ef0a6aeeb35d7',
+300 silly resolved     _from: 'forever-monitor@~1.5.1',
+300 silly resolved     _npmVersion: '2.1.6',
+300 silly resolved     _nodeVersion: '0.10.32',
+300 silly resolved     _npmUser: { name: 'jcrugzz', email: 'jcrugzz@gmail.com' },
+300 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+300 silly resolved     dist:
+300 silly resolved      { shasum: '279388dfa93b085363d6b28a823ef0a6aeeb35d7',
+300 silly resolved        tarball: 'http://registry.npmjs.org/forever-monitor/-/forever-monitor-1.5.2.tgz' },
+300 silly resolved     directories: {},
+300 silly resolved     _resolved: 'https://registry.npmjs.org/forever-monitor/-/forever-monitor-1.5.2.tgz',
+300 silly resolved     readme: 'ERROR: No README data found!' },
+300 silly resolved   { name: 'nconf',
+300 silly resolved     description: 'Hierarchical node.js configuration with files, environment variables, command-line arguments, and atomic object merging.',
+300 silly resolved     version: '0.6.9',
+300 silly resolved     author: { name: 'Nodejitsu Inc.', email: 'info@nodejitsu.com' },
+300 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+300 silly resolved     repository: { type: 'git', url: 'http://github.com/flatiron/nconf.git' },
+300 silly resolved     keywords: [ 'configuration', 'key value store', 'plugabble' ],
+300 silly resolved     dependencies: { async: '0.2.9', ini: '1.x.x', optimist: '0.6.0' },
+300 silly resolved     devDependencies: { vows: '0.7.x' },
+300 silly resolved     main: './lib/nconf',
+300 silly resolved     scripts: { test: 'vows test/*-test.js test/**/*-test.js --spec' },
+300 silly resolved     engines: { node: '>= 0.4.0' },
+300 silly resolved     bugs: { url: 'https://github.com/flatiron/nconf/issues' },
+300 silly resolved     _id: 'nconf@0.6.9',
+300 silly resolved     dist:
+300 silly resolved      { shasum: '9570ef15ed6f9ae6b2b3c8d5e71b66d3193cd661',
+300 silly resolved        tarball: 'http://registry.npmjs.org/nconf/-/nconf-0.6.9.tgz' },
+300 silly resolved     _from: 'nconf@~0.6.9',
+300 silly resolved     _npmVersion: '1.3.8',
+300 silly resolved     _npmUser: { name: 'jcrugzz', email: 'jcrugzz@gmail.com' },
+300 silly resolved     directories: {},
+300 silly resolved     _shasum: '9570ef15ed6f9ae6b2b3c8d5e71b66d3193cd661',
+300 silly resolved     _resolved: 'https://registry.npmjs.org/nconf/-/nconf-0.6.9.tgz',
+300 silly resolved     readme: 'ERROR: No README data found!',
+300 silly resolved     homepage: 'https://github.com/flatiron/nconf' },
+300 silly resolved   { name: 'nssocket',
+300 silly resolved     description: 'An elegant way to define lightweight protocols on-top of TCP/TLS sockets in node.js',
+300 silly resolved     version: '0.5.3',
+300 silly resolved     author: { name: 'Charlie Robbins', email: 'charlie.robbins@gmail.com' },
+300 silly resolved     maintainers: [ [Object], [Object] ],
+300 silly resolved     repository: { type: 'git', url: 'http://github.com/nodejitsu/nssocket.git' },
+300 silly resolved     dependencies: { eventemitter2: '~0.4.14', lazy: '~1.0.11' },
+300 silly resolved     devDependencies: { vows: '~0.8.1', msgpack: '~0.2.4' },
+300 silly resolved     main: './lib/nssocket',
+300 silly resolved     engines: { node: '>= 0.8.x' },
+300 silly resolved     scripts: { test: 'vows test/*-test.js --spec' },
+300 silly resolved     license: 'MIT',
+300 silly resolved     gitHead: 'ab705cee33b2683bb9dd36533e7166e53f5b46b9',
+300 silly resolved     bugs: { url: 'https://github.com/nodejitsu/nssocket/issues' },
+300 silly resolved     homepage: 'https://github.com/nodejitsu/nssocket',
+300 silly resolved     _id: 'nssocket@0.5.3',
+300 silly resolved     _shasum: '883ca2ec605f5ed64a4d5190b2625401928f8f8d',
+300 silly resolved     _from: 'nssocket@~0.5.1',
+300 silly resolved     _npmVersion: '2.1.9',
+300 silly resolved     _nodeVersion: '0.10.33',
+300 silly resolved     _npmUser: { name: 'indexzero', email: 'charlie.robbins@gmail.com' },
+300 silly resolved     dist:
+300 silly resolved      { shasum: '883ca2ec605f5ed64a4d5190b2625401928f8f8d',
+300 silly resolved        tarball: 'http://registry.npmjs.org/nssocket/-/nssocket-0.5.3.tgz' },
+300 silly resolved     directories: {},
+300 silly resolved     _resolved: 'https://registry.npmjs.org/nssocket/-/nssocket-0.5.3.tgz',
+300 silly resolved     readme: 'ERROR: No README data found!' },
+300 silly resolved   { name: 'optimist',
+300 silly resolved     version: '0.6.1',
+300 silly resolved     description: 'Light-weight option parsing with an argv hash. No optstrings attached.',
+300 silly resolved     main: './index.js',
+300 silly resolved     dependencies: { wordwrap: '~0.0.2', minimist: '~0.0.1' },
+300 silly resolved     devDependencies: { hashish: '~0.0.4', tap: '~0.4.0' },
+300 silly resolved     scripts: { test: 'tap ./test/*.js' },
+300 silly resolved     repository:
+300 silly resolved      { type: 'git',
+300 silly resolved        url: 'http://github.com/substack/node-optimist.git' },
+300 silly resolved     keywords:
+300 silly resolved      [ 'argument',
+300 silly resolved        'args',
+300 silly resolved        'option',
+300 silly resolved        'parser',
+300 silly resolved        'parsing',
+300 silly resolved        'cli',
+300 silly resolved        'command' ],
+300 silly resolved     author:
+300 silly resolved      { name: 'James Halliday',
+300 silly resolved        email: 'mail@substack.net',
+300 silly resolved        url: 'http://substack.net' },
+300 silly resolved     license: 'MIT/X11',
+300 silly resolved     engine: { node: '>=0.4' },
+300 silly resolved     bugs: { url: 'https://github.com/substack/node-optimist/issues' },
+300 silly resolved     homepage: 'https://github.com/substack/node-optimist',
+300 silly resolved     _id: 'optimist@0.6.1',
+300 silly resolved     dist:
+300 silly resolved      { shasum: 'da3ea74686fa21a19a111c326e90eb15a0196686',
+300 silly resolved        tarball: 'http://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz' },
+300 silly resolved     _from: 'optimist@~0.6.0',
+300 silly resolved     _npmVersion: '1.3.21',
+300 silly resolved     _npmUser: { name: 'substack', email: 'mail@substack.net' },
+300 silly resolved     maintainers: [ [Object] ],
+300 silly resolved     directories: {},
+300 silly resolved     _shasum: 'da3ea74686fa21a19a111c326e90eb15a0196686',
+300 silly resolved     _resolved: 'https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz',
+300 silly resolved     readme: 'ERROR: No README data found!' },
+300 silly resolved   { name: 'timespan',
+300 silly resolved     description: 'A JavaScript TimeSpan library for node.js (and soon the browser)',
+300 silly resolved     version: '2.3.0',
+300 silly resolved     author: { name: 'Michael Stum', email: 'blog@stum.de' },
+300 silly resolved     contributors: [ [Object] ],
+300 silly resolved     repository:
+300 silly resolved      { type: 'git',
+300 silly resolved        url: 'https://github.com/indexzero/TimeSpan.js.git' },
+300 silly resolved     keywords: [ 'time', 'dates', 'utilities', 'timespan' ],
+300 silly resolved     devDependencies: { vows: '>= 0.7.0' },
+300 silly resolved     main: './lib/time-span.js',
+300 silly resolved     scripts: { test: 'vows test/*-test.js --spec' },
+300 silly resolved     engines: { node: '>= 0.2.0' },
+300 silly resolved     readme: '# timespan\n\nA simple implementation of TimeSpans in Javascript.\n\n## Installation in node.js\n\n### Installing npm (node package manager)\n``` bash\n  $ curl http://npmjs.org/install.sh | sh\n```\n\n### Installing timespan\n``` bash\n  [sudo] npm install timespan\n```\n\n## Usage \nYou have two options when creating a new TimeSpan object: either explicitly instantiate it using the TimeSpan constructor function or use a helper method to create from a specific length of time.\n\n### Using the new constructor\n\n``` js\n  var timespan = require(\'timespan\');\n  var ts = new timespan.TimeSpan();\n```\n\nThe constructor takes 5 parameters, all which are optional and which can be used to initialize the TimeSpan to a given value. These parameters are: `milliseconds`, `seconds`, `minutes`, `hours`, `days`.\n\n``` js\n  //\n  // Initializes the TimeSpan to 4 Minutes, 16 Seconds and 0 Milliseconds.\n  //\n  var ts = new TimeSpan(0,16,4)\n\n  //\n  // Initializes the TimeSpan to 3 hours, 4 minutes, 10 seconds and 0 msecs.\n  //\n  var ts = new TimeSpan(0,10,64,2);\n```\n\n### Using Construction Helper Method(s) \nYou can initialize a new TimeSpan by calling one of these Functions:\n\n``` js\n  timespan.FromSeconds(/* seconds */);\n  timespan.FromMinutes(/* minutes */);\n  timespan.FromHours(/* hours */);\n  timespan.FromDays(/* hours */);\n    \n  //\n  // This behaves differently, see below\n  //\n  timespan.FromDates(start, end);\n```\n\nThe first four helper methods take a single numeric parameter and create a new TimeSpan instance. e.g. `timespan.FromSeconds(45)` is equivalent to `new TimeSpan(0,45)`. If the parameter is invalid/not a number, it will just be treated as 0 no error will be thrown.\n\n`timespan.FromDates()` is different as it takes two dates. The TimeSpan will be the difference between these dates.\n\nIf the second date is earlier than the first date, the TimeSpan will have a negative value. You can pass in "true" as the third parameter to force the TimeSpan to be positive always.\n\n``` js\n  var date1 = new Date(2010, 3, 1, 10, 10, 5, 0);\n  var date2 = new Date(2010, 3, 1, 10, 10, 10, 0);\n  var ts = TimeSpan.FromDates(date2, date1);\n  var ts2 = TimeSpan.FromDates(date2, date1, true);\n  \n  //\n  // -5, because we put the later date first\n  //\n  console.log(ts.totalSeconds()); \n  \n  //\n  // 5, because we passed true as third parameter\n  //\n  console.log(ts2.totalSeconds()); \n```\n\n\n### Adding / Subtracting TimeSpans\nThere are several functions to add or subtract time:\n\n``` js\n  ts.addMilliseconds()\n  ts.addSeconds()\n  ts.addMinutes()\n  ts.addHours()\n  ts.addDays()\n  ts.subtractMilliseconds()\n  ts.subtractSeconds()\n  ts.subtractMinutes()\n  ts.subtractHours()\n  ts.subtractDays()\n```\n\nAll these functions take a single numeric parameter. If the parameter is invalid, not a number, or missing it will be ignored and no Error is thrown.\n\n``` js\n  var ts = new TimeSpan();\n  ts.addSeconds(30);\n  ts.addMinutes(2);\n  ts.subtractSeconds(60);\n  \n  //\n  // ts will now be a timespan of 1 minute and 30 seconds\n  //\n```\n\nThe parameter can be negative to negate the operation `ts.addSeconds(-30)` is equivalent to `ts.subtractSeconds(30)`.\n\n### Interacting with Other TimeSpan instances\nThese are the functions that interact with another TimeSpan:\n\n``` js\n  ts.add()\n  ts.subtract()\n  ts.equals()\n```\n\nadd and subtract add/subtract the other TimeSpan to the current one:\n\n``` js\n  var ts = TimeSpan.FromSeconds(30);\n  var ts2 = TimeSpan.FromMinutes(2);\n  ts.add(ts2);\n  \n  //\n  // ts is now a TimeSpan of 2 Minutes, 30 Seconds\n  // ts2 is unchanged\n  //\n```\n\nequals checks if two TimeSpans have the same time:\n\n``` js\n  var ts = TimeSpan.FromSeconds(30);\n  var ts2 = TimeSpan.FromSeconds(30);\n  var eq = ts.equals(ts2); // true\n  ts2.addSeconds(1);\n  var eq2 = ts.equals(ts2); // false\n```\n\n### Retrieving the Value of a TimeSpan\nThere are two sets of functions to retreive the function of the TimeSpan: those that deal with the full value in various measurements and another that gets the individual components.\n\n#### Retrieve the full value\n\n``` js\n  ts.totalMilliseconds()\n  ts.totalSeconds()\n  ts.totalMinutes()\n  ts.totalHours()\n  ts.totalDays()\n```\n\nThese functions convert the value to the given format and return it. The result can be a floating point number. These functions take a single parameter roundDown which can be set to true to round the value down to an Integer.\n\n``` js\n  var ts = TimeSpan.fromSeconds(90);\n  console.log(ts.totalMilliseconds()); // 90000\n  console.log(ts.totalSeconds());      // 90\n  console.log(ts.totalMinutes());      // 1.5\n  console.log(ts.totalMinutes(true));  // 1\n```\n\n#### Retrieve a component of the TimeSpan\n\n``` js\n  ts.milliseconds\n  ts.seconds\n  ts.minutes\n  ts.hours\n  ts.days\n```\n\nThese functions return a component of the TimeSpan that could be used to represent a clock. \n\n``` js\n  var ts = TimeSpan.FromSeconds(90);\n  console.log(ts.seconds()); // 30\n  console.log(ts.minutes()); // 1\n```\n\nBasically these value never "overflow" - seconds will only return 0 to 59, hours only 0 to 23 etc. Days could grow infinitely. All of these functions automatically round down the result:\n\n``` js\n  var ts = TimeSpan.FromDays(2);\n  ts.addHours(12);\n  console.log(ts.days());  // 2\n  console.log(ts.hours()); // 12\n```\n\n## Remark about Backwards Compatibility\nVersion 0.2.x was designed to work with [node.js][0] and backwards compatibility to the browser-based usage was not considered a high priority. This will be fixed in future versions, but for now if you need to use this in the browser, you can find the 0.1.x code under `/browser`.\n\n#### Author: [Michael Stum](http://www.stum.de)\n#### Contributors: [Charlie Robbins](http://github.com/indexzero)\n\n[0]: http://nodejs.org ',
+300 silly resolved     readmeFilename: 'README.md',
+300 silly resolved     _id: 'timespan@2.3.0',
+300 silly resolved     dist:
+300 silly resolved      { shasum: '4902ce040bd13d845c8f59b27e9d59bad6f39929',
+300 silly resolved        tarball: 'http://registry.npmjs.org/timespan/-/timespan-2.3.0.tgz' },
+300 silly resolved     _from: 'timespan@~2.3.0',
+300 silly resolved     _npmVersion: '1.2.14',
+300 silly resolved     _npmUser: { name: 'indexzero', email: 'charlie.robbins@gmail.com' },
+300 silly resolved     maintainers: [ [Object] ],
+300 silly resolved     directories: {},
+300 silly resolved     _shasum: '4902ce040bd13d845c8f59b27e9d59bad6f39929',
+300 silly resolved     _resolved: 'https://registry.npmjs.org/timespan/-/timespan-2.3.0.tgz',
+300 silly resolved     bugs: { url: 'https://github.com/indexzero/TimeSpan.js/issues' },
+300 silly resolved     homepage: 'https://github.com/indexzero/TimeSpan.js' },
+300 silly resolved   { name: 'utile',
+300 silly resolved     description: 'A drop-in replacement for `util` with some additional advantageous functions',
+300 silly resolved     version: '0.2.1',
+300 silly resolved     author: { name: 'Nodejitsu Inc.', email: 'info@nodejitsu.com' },
+300 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+300 silly resolved     repository: { type: 'git', url: 'http://github.com/flatiron/utile.git' },
+300 silly resolved     dependencies:
+300 silly resolved      { async: '~0.2.9',
+300 silly resolved        'deep-equal': '*',
+300 silly resolved        i: '0.3.x',
+300 silly resolved        mkdirp: '0.x.x',
+300 silly resolved        ncp: '0.4.x',
+300 silly resolved        rimraf: '2.x.x' },
+300 silly resolved     devDependencies: { vows: '0.7.x' },
+300 silly resolved     scripts: { test: 'vows --spec' },
+300 silly resolved     main: './lib/index',
+300 silly resolved     engines: { node: '>= 0.6.4' },
+300 silly resolved     bugs: { url: 'https://github.com/flatiron/utile/issues' },
+300 silly resolved     _id: 'utile@0.2.1',
+300 silly resolved     dist:
+300 silly resolved      { shasum: '930c88e99098d6220834c356cbd9a770522d90d7',
+300 silly resolved        tarball: 'http://registry.npmjs.org/utile/-/utile-0.2.1.tgz' },
+300 silly resolved     _from: 'utile@~0.2.1',
+300 silly resolved     _npmVersion: '1.3.8',
+300 silly resolved     _npmUser: { name: 'jcrugzz', email: 'jcrugzz@gmail.com' },
+300 silly resolved     directories: {},
+300 silly resolved     _shasum: '930c88e99098d6220834c356cbd9a770522d90d7',
+300 silly resolved     _resolved: 'https://registry.npmjs.org/utile/-/utile-0.2.1.tgz',
+300 silly resolved     readme: 'ERROR: No README data found!',
+300 silly resolved     homepage: 'https://github.com/flatiron/utile' },
+300 silly resolved   { name: 'winston',
+300 silly resolved     description: 'A multi-transport async logging library for Node.js',
+300 silly resolved     version: '0.8.3',
+300 silly resolved     author: { name: 'Nodejitsu Inc.', email: 'info@nodejitsu.com' },
+300 silly resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+300 silly resolved     repository: { type: 'git', url: 'https://github.com/flatiron/winston.git' },
+300 silly resolved     keywords: [ 'logging', 'sysadmin', 'tools' ],
+300 silly resolved     dependencies:
+300 silly resolved      { async: '0.2.x',
+300 silly resolved        colors: '0.6.x',
+300 silly resolved        cycle: '1.0.x',
+300 silly resolved        eyes: '0.1.x',
+300 silly resolved        isstream: '0.1.x',
+300 silly resolved        pkginfo: '0.3.x',
+300 silly resolved        'stack-trace': '0.0.x' },
+300 silly resolved     devDependencies: { vows: '0.7.x' },
+300 silly resolved     main: './lib/winston',
+300 silly resolved     scripts: { test: 'vows --spec --isolate' },
+300 silly resolved     engines: { node: '>= 0.6.0' },
+300 silly resolved     licenses: [ [Object] ],
+300 silly resolved     gitHead: 'd12b2688d7d82557a5f5d490217e3c516bb661cb',
+300 silly resolved     bugs: { url: 'https://github.com/flatiron/winston/issues' },
+300 silly resolved     homepage: 'https://github.com/flatiron/winston',
+300 silly resolved     _id: 'winston@0.8.3',
+300 silly resolved     _shasum: '64b6abf4cd01adcaefd5009393b1d8e8bec19db0',
+300 silly resolved     _from: 'winston@~0.8.1',
+300 silly resolved     _npmVersion: '2.1.6',
+300 silly resolved     _nodeVersion: '0.10.32',
+300 silly resolved     _npmUser: { name: 'jcrugzz', email: 'jcrugzz@gmail.com' },
+300 silly resolved     dist:
+300 silly resolved      { shasum: '64b6abf4cd01adcaefd5009393b1d8e8bec19db0',
+300 silly resolved        tarball: 'http://registry.npmjs.org/winston/-/winston-0.8.3.tgz' },
+300 silly resolved     directories: {},
+300 silly resolved     _resolved: 'https://registry.npmjs.org/winston/-/winston-0.8.3.tgz',
+300 silly resolved     readme: 'ERROR: No README data found!' } ]
+301 info install colors@0.6.2 into /usr/local/lib/node_modules/forever
+302 info install cliff@0.1.10 into /usr/local/lib/node_modules/forever
+303 info install flatiron@0.4.3 into /usr/local/lib/node_modules/forever
+304 info install forever-monitor@1.5.2 into /usr/local/lib/node_modules/forever
+305 info install nconf@0.6.9 into /usr/local/lib/node_modules/forever
+306 info install nssocket@0.5.3 into /usr/local/lib/node_modules/forever
+307 info install optimist@0.6.1 into /usr/local/lib/node_modules/forever
+308 info install timespan@2.3.0 into /usr/local/lib/node_modules/forever
+309 info install utile@0.2.1 into /usr/local/lib/node_modules/forever
+310 info install winston@0.8.3 into /usr/local/lib/node_modules/forever
+311 info installOne colors@0.6.2
+312 info installOne cliff@0.1.10
+313 info installOne flatiron@0.4.3
+314 info installOne forever-monitor@1.5.2
+315 info installOne nconf@0.6.9
+316 info installOne nssocket@0.5.3
+317 info installOne optimist@0.6.1
+318 info installOne timespan@2.3.0
+319 info installOne utile@0.2.1
+320 info installOne winston@0.8.3
+321 verbose lib/node_modules/forever/node_modules/colors unbuild
+322 verbose lib/node_modules/forever/node_modules/cliff unbuild
+323 verbose lib/node_modules/forever/node_modules/flatiron unbuild
+324 verbose lib/node_modules/forever/node_modules/forever-monitor unbuild
+325 verbose lib/node_modules/forever/node_modules/nconf unbuild
+326 verbose lib/node_modules/forever/node_modules/nssocket unbuild
+327 verbose lib/node_modules/forever/node_modules/optimist unbuild
+328 verbose lib/node_modules/forever/node_modules/timespan unbuild
+329 verbose lib/node_modules/forever/node_modules/utile unbuild
+330 verbose lib/node_modules/forever/node_modules/winston unbuild
+331 verbose tar unpack /Users/xTalandier/.npm/colors/0.6.2/package.tgz
+332 silly lockFile 1fadb8d4-ules-forever-node-modules-colors tar:///usr/local/lib/node_modules/forever/node_modules/colors
+333 verbose lock tar:///usr/local/lib/node_modules/forever/node_modules/colors /Users/xTalandier/.npm/1fadb8d4-ules-forever-node-modules-colors.lock
+334 silly lockFile 4ff91bae-ier-npm-colors-0-6-2-package-tgz tar:///Users/xTalandier/.npm/colors/0.6.2/package.tgz
+335 verbose lock tar:///Users/xTalandier/.npm/colors/0.6.2/package.tgz /Users/xTalandier/.npm/4ff91bae-ier-npm-colors-0-6-2-package-tgz.lock
+336 verbose tar unpack /Users/xTalandier/.npm/cliff/0.1.10/package.tgz
+337 silly lockFile cb99b9fe-dules-forever-node-modules-cliff tar:///usr/local/lib/node_modules/forever/node_modules/cliff
+338 verbose lock tar:///usr/local/lib/node_modules/forever/node_modules/cliff /Users/xTalandier/.npm/cb99b9fe-dules-forever-node-modules-cliff.lock
+339 silly lockFile cf59090e-ier-npm-cliff-0-1-10-package-tgz tar:///Users/xTalandier/.npm/cliff/0.1.10/package.tgz
+340 verbose lock tar:///Users/xTalandier/.npm/cliff/0.1.10/package.tgz /Users/xTalandier/.npm/cf59090e-ier-npm-cliff-0-1-10-package-tgz.lock
+341 verbose tar unpack /Users/xTalandier/.npm/flatiron/0.4.3/package.tgz
+342 silly lockFile 919a3fee-es-forever-node-modules-flatiron tar:///usr/local/lib/node_modules/forever/node_modules/flatiron
+343 verbose lock tar:///usr/local/lib/node_modules/forever/node_modules/flatiron /Users/xTalandier/.npm/919a3fee-es-forever-node-modules-flatiron.lock
+344 silly lockFile 0bdb4a86-r-npm-flatiron-0-4-3-package-tgz tar:///Users/xTalandier/.npm/flatiron/0.4.3/package.tgz
+345 verbose lock tar:///Users/xTalandier/.npm/flatiron/0.4.3/package.tgz /Users/xTalandier/.npm/0bdb4a86-r-npm-flatiron-0-4-3-package-tgz.lock
+346 verbose tar unpack /Users/xTalandier/.npm/forever-monitor/1.5.2/package.tgz
+347 silly lockFile 65359873-ver-node-modules-forever-monitor tar:///usr/local/lib/node_modules/forever/node_modules/forever-monitor
+348 verbose lock tar:///usr/local/lib/node_modules/forever/node_modules/forever-monitor /Users/xTalandier/.npm/65359873-ver-node-modules-forever-monitor.lock
+349 silly lockFile d9807e74-orever-monitor-1-5-2-package-tgz tar:///Users/xTalandier/.npm/forever-monitor/1.5.2/package.tgz
+350 verbose lock tar:///Users/xTalandier/.npm/forever-monitor/1.5.2/package.tgz /Users/xTalandier/.npm/d9807e74-orever-monitor-1-5-2-package-tgz.lock
+351 verbose tar unpack /Users/xTalandier/.npm/nconf/0.6.9/package.tgz
+352 silly lockFile 6f97547c-dules-forever-node-modules-nconf tar:///usr/local/lib/node_modules/forever/node_modules/nconf
+353 verbose lock tar:///usr/local/lib/node_modules/forever/node_modules/nconf /Users/xTalandier/.npm/6f97547c-dules-forever-node-modules-nconf.lock
+354 silly lockFile 7a567b49-dier-npm-nconf-0-6-9-package-tgz tar:///Users/xTalandier/.npm/nconf/0.6.9/package.tgz
+355 verbose lock tar:///Users/xTalandier/.npm/nconf/0.6.9/package.tgz /Users/xTalandier/.npm/7a567b49-dier-npm-nconf-0-6-9-package-tgz.lock
+356 verbose tar unpack /Users/xTalandier/.npm/nssocket/0.5.3/package.tgz
+357 silly lockFile 5b0d8bd8-es-forever-node-modules-nssocket tar:///usr/local/lib/node_modules/forever/node_modules/nssocket
+358 verbose lock tar:///usr/local/lib/node_modules/forever/node_modules/nssocket /Users/xTalandier/.npm/5b0d8bd8-es-forever-node-modules-nssocket.lock
+359 silly lockFile c5f3868e-r-npm-nssocket-0-5-3-package-tgz tar:///Users/xTalandier/.npm/nssocket/0.5.3/package.tgz
+360 verbose lock tar:///Users/xTalandier/.npm/nssocket/0.5.3/package.tgz /Users/xTalandier/.npm/c5f3868e-r-npm-nssocket-0-5-3-package-tgz.lock
+361 verbose tar unpack /Users/xTalandier/.npm/optimist/0.6.1/package.tgz
+362 silly lockFile a100d68f-es-forever-node-modules-optimist tar:///usr/local/lib/node_modules/forever/node_modules/optimist
+363 verbose lock tar:///usr/local/lib/node_modules/forever/node_modules/optimist /Users/xTalandier/.npm/a100d68f-es-forever-node-modules-optimist.lock
+364 silly lockFile 2d531029-r-npm-optimist-0-6-1-package-tgz tar:///Users/xTalandier/.npm/optimist/0.6.1/package.tgz
+365 verbose lock tar:///Users/xTalandier/.npm/optimist/0.6.1/package.tgz /Users/xTalandier/.npm/2d531029-r-npm-optimist-0-6-1-package-tgz.lock
+366 verbose tar unpack /Users/xTalandier/.npm/timespan/2.3.0/package.tgz
+367 silly lockFile af59fcfc-es-forever-node-modules-timespan tar:///usr/local/lib/node_modules/forever/node_modules/timespan
+368 verbose lock tar:///usr/local/lib/node_modules/forever/node_modules/timespan /Users/xTalandier/.npm/af59fcfc-es-forever-node-modules-timespan.lock
+369 silly lockFile 4e2682da-r-npm-timespan-2-3-0-package-tgz tar:///Users/xTalandier/.npm/timespan/2.3.0/package.tgz
+370 verbose lock tar:///Users/xTalandier/.npm/timespan/2.3.0/package.tgz /Users/xTalandier/.npm/4e2682da-r-npm-timespan-2-3-0-package-tgz.lock
+371 verbose tar unpack /Users/xTalandier/.npm/utile/0.2.1/package.tgz
+372 silly lockFile e5c1f825-dules-forever-node-modules-utile tar:///usr/local/lib/node_modules/forever/node_modules/utile
+373 verbose lock tar:///usr/local/lib/node_modules/forever/node_modules/utile /Users/xTalandier/.npm/e5c1f825-dules-forever-node-modules-utile.lock
+374 silly lockFile f0b99ea6-dier-npm-utile-0-2-1-package-tgz tar:///Users/xTalandier/.npm/utile/0.2.1/package.tgz
+375 verbose lock tar:///Users/xTalandier/.npm/utile/0.2.1/package.tgz /Users/xTalandier/.npm/f0b99ea6-dier-npm-utile-0-2-1-package-tgz.lock
+376 verbose tar unpack /Users/xTalandier/.npm/winston/0.8.3/package.tgz
+377 silly lockFile f053fea3-les-forever-node-modules-winston tar:///usr/local/lib/node_modules/forever/node_modules/winston
+378 verbose lock tar:///usr/local/lib/node_modules/forever/node_modules/winston /Users/xTalandier/.npm/f053fea3-les-forever-node-modules-winston.lock
+379 silly lockFile da8293a6-er-npm-winston-0-8-3-package-tgz tar:///Users/xTalandier/.npm/winston/0.8.3/package.tgz
+380 verbose lock tar:///Users/xTalandier/.npm/winston/0.8.3/package.tgz /Users/xTalandier/.npm/da8293a6-er-npm-winston-0-8-3-package-tgz.lock
+381 silly gunzTarPerm modes [ '755', '644' ]
+382 silly gunzTarPerm modes [ '755', '644' ]
+383 silly gunzTarPerm modes [ '755', '644' ]
+384 silly gunzTarPerm modes [ '755', '644' ]
+385 silly gunzTarPerm modes [ '755', '644' ]
+386 silly gunzTarPerm modes [ '755', '644' ]
+387 silly gunzTarPerm modes [ '755', '644' ]
+388 silly gunzTarPerm modes [ '755', '644' ]
+389 silly gunzTarPerm modes [ '755', '644' ]
+390 silly gunzTarPerm extractEntry package.json
+391 silly gunzTarPerm extractEntry package.json
+392 silly gunzTarPerm extractEntry package.json
+393 silly gunzTarPerm extractEntry package.json
+394 silly gunzTarPerm extractEntry package.json
+395 silly gunzTarPerm extractEntry package.json
+396 silly gunzTarPerm extractEntry package.json
+397 silly gunzTarPerm extractEntry package.json
+398 silly gunzTarPerm extractEntry package.json
+399 silly gunzTarPerm extractEntry colors.js
+400 silly gunzTarPerm extractEntry example.js
+401 silly gunzTarPerm extractEntry .npmignore
+402 silly gunzTarPerm extractEntry README.md
+403 silly gunzTarPerm extractEntry .npmignore
+404 silly gunzTarPerm extractEntry README.md
+405 silly gunzTarPerm extractEntry .npmignore
+406 silly gunzTarPerm extractEntry README.md
+407 silly gunzTarPerm extractEntry .npmignore
+408 silly gunzTarPerm extractEntry README.md
+409 silly gunzTarPerm extractEntry .npmignore
+410 silly gunzTarPerm extractEntry README.md
+411 silly gunzTarPerm extractEntry LICENSE
+412 silly gunzTarPerm extractEntry index.js
+413 silly gunzTarPerm extractEntry .npmignore
+414 silly gunzTarPerm extractEntry README.md
+415 silly gunzTarPerm extractEntry .npmignore
+416 silly gunzTarPerm extractEntry README.md
+417 silly gunzTarPerm extractEntry test.js
+418 silly gunzTarPerm extractEntry MIT-LICENSE.txt
+419 silly gunzTarPerm extractEntry ReadMe.md
+420 silly gunzTarPerm extractEntry example.html
+421 silly gunzTarPerm extractEntry themes/winston-dark.js
+422 silly gunzTarPerm extractEntry themes/winston-light.js
+423 silly gunzTarPerm extractEntry LICENSE
+424 silly gunzTarPerm extractEntry assets/inspect.png
+425 silly gunzTarPerm modified mode [ 'assets/inspect.png', 511, 493 ]
+426 silly gunzTarPerm extractEntry LICENSE
+427 silly gunzTarPerm extractEntry usage.js
+428 silly gunzTarPerm extractEntry LICENSE
+429 silly gunzTarPerm extractEntry .travis.yml
+430 silly gunzTarPerm extractEntry .travis.yml
+431 silly gunzTarPerm extractEntry example/bool.js
+432 silly gunzTarPerm extractEntry LICENSE
+433 silly gunzTarPerm extractEntry browser/TimeSpan-1.2.js
+434 silly gunzTarPerm extractEntry LICENSE
+435 silly gunzTarPerm extractEntry .travis.yml
+436 silly gunzTarPerm extractEntry LICENSE
+437 silly gunzTarPerm extractEntry LICENSE
+438 silly gunzTarPerm extractEntry examples/all-env-vars.js
+439 error Error: ENOENT, lstat '/usr/local/lib/node_modules/forever/node_modules/cliff/.npmignore'
+440 error If you need help, you may report this *entire* log,
+440 error including the npm and node versions, at:
+440 error     <http://github.com/npm/npm/issues>
+441 error System Darwin 14.1.0
+442 error command "node" "/usr/local/bin/npm" "install" "-g" "forever"
+443 error cwd /Applications/MAMP/htdocs/angular-web-starter-kit-master
+444 error node -v v0.10.32
+445 error npm -v 1.4.28
+446 error path /usr/local/lib/node_modules/forever/node_modules/cliff/.npmignore
+447 error fstream_path /usr/local/lib/node_modules/forever/node_modules/cliff/.npmignore
+448 error fstream_type File
+449 error fstream_class FileWriter
+450 error code ENOENT
+451 error errno 34
+452 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/writer.js:287:26
+452 error fstream_stack Object.oncomplete (evalmachine.<anonymous>:107:15)
+453 verbose exit [ 34, true ]
