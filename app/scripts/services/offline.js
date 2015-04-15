@@ -49,6 +49,24 @@ App.factory('$ajaxoffline', ['$http' , '$q', function ($http, $q) {
     return isOffline ? getDataWhenOffline(url) : getDataWhenOnline(url);
   }
 
+  /**
+   * @ngdoc function
+   * @name ajaxoffline.post
+   * @module ajaxoffline
+   * @kind function
+   *
+   * @description Execuce a request with the POST verb
+   * @param {string} url URL to access
+   * @returns {Deferred} Returns a new instance of deferred.
+   */
+  function post(url, params) {
+    if(!forced){
+      checkConnection();
+    }
+
+    return isOffline ? postDataWhenOffline(url, params) : postDataWhenOnline(url, params);
+  }
+
 
   /**
    * $http execution
@@ -86,6 +104,44 @@ App.factory('$ajaxoffline', ['$http' , '$q', function ($http, $q) {
     return def.promise;
   }
 
+
+  /**
+   * $http execution
+   * @private
+   * @param url
+   * @returns {promise.promise|Function|*|jQuery.promise|deferred.promise|{then, catch, finally}}
+   */
+  function postDataWhenOnline(url, params) {
+    var def = $q.defer();
+    $http.post(url, params)
+      .success(function (data) {
+        storeData('post', url, data, params);
+        def.resolve(data);
+      }).error(function () {
+        def.reject("Error in [POST][ONLINE] " + url);
+      });
+
+    return def.promise;
+  }
+
+  /**
+   * retrieve stored data
+   * @private
+   * @param url
+   * @returns {promise.promise|Function|*|jQuery.promise|deferred.promise|{then, catch, finally}}
+   */
+  function postDataWhenOffline(url, params) {
+    var key = createStoringKey('post', url, params);
+    var def = $q.defer();
+    localforage.getItem(key)
+      .then(function (data) {
+        def.resolve(JSON.parse(data));
+      });
+
+    return def.promise;
+  }
+
+
   /**
    * Return a conventional key for localforage
    * @private
@@ -93,8 +149,8 @@ App.factory('$ajaxoffline', ['$http' , '$q', function ($http, $q) {
    * @param {string} url URL where data was taken
    * @returns {string}
    */
-  function createStoringKey(verb, url) {
-    return verb + '' + btoa(url);
+  function createStoringKey(verb, url, params) {
+    return verb + '|' + btoa(url) + '|' + JSON.stringify(params);
   }
 
   /**
@@ -104,8 +160,8 @@ App.factory('$ajaxoffline', ['$http' , '$q', function ($http, $q) {
    * @param {string} url URL where data was taken
    * @param {Object} data Data retrieved
    */
-  function storeData(verb, url, data) {
-    var key = createStoringKey(verb, url);
+  function storeData(verb, url, data, params) {
+    var key = createStoringKey(verb, url, params);
     var value = JSON.stringify(data);
     //console.log('KEY=' + key);
     //console.log('VALUE=' + value);
@@ -115,6 +171,7 @@ App.factory('$ajaxoffline', ['$http' , '$q', function ($http, $q) {
   return {
     isOffline: isOffline,
     get: get,
+    post: post,
     moduleName: moduleName,
     forceConnectionStatus: forceConnectionStatus,
     restoreAutoCheck: restoreAutoCheck
