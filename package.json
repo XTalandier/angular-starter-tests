@@ -41,6 +41,7 @@
   "private": true,
   "scripts": {
     "install": "",
-    "test": "karma start app/karma.conf.js"
+    "tdd": "karma run app/karma.conf.js",
+    "test": "karma run app/karma.conf.js"
   }
 }
