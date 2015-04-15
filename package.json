@@ -40,7 +40,7 @@
   },
   "private": true,
   "scripts": {
-    "install": "bower install",
-    "test": "http-server -p 8800 --silent --cors & karma start app/karma.conf.js"
+    "install": "",
+    "test": "karma start app/karma.conf.js"
   }
 }
