@@ -1,22 +1,33 @@
 App.controller('MainCtrl', ['$scope', '$ajaxoffline', function ($scope, $ajaxoffline) {
-  $scope.loadData = function () {
+  $scope.usersGet = [];
+  $scope.usersPost = [];
 
-    $scope.users = [];
+
+  $scope.loadDataGET = function () {
 
     $ajaxoffline.get('data.json').then(dataLoaded);
 
-    function dataLoaded(data){
-      $scope.users = data;
+    function dataLoaded(data) {
+      $scope.usersGet = data;
+    }
+
+  };
+
+  $scope.loadDataPOST = function () {
+
+    $ajaxoffline.post('data.json', {'aaa': 'bbb', 'ccc': 'ddd'}).then(dataLoaded);
+
+    function dataLoaded(data) {
+      $scope.usersPost = data;
     }
 
   };
 
   var status = false;
 
-  $scope.switchStatus = function(){
+  $scope.switchStatus = function () {
     $ajaxoffline.forceConnectionStatus(!status);
   }
-
 
 
 }]);

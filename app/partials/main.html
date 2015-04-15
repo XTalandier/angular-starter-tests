@@ -1,10 +1,29 @@
-<h1>Test services</h1>
+<button ng-click="switchStatus()">Switch Status</button>
+<hr />
+<h1>GET</h1>
 
-<button id="btn-load-data" ng-click="loadData()">Load DATA</button>
-<button id="btn-load-data" ng-click="switchStatus()">Switch Status</button>
+<button id="btn-load-data" ng-click="loadDataGET()">Load DATA</button>
 
 <ul>
-  <li ng-repeat="user in users">
+  <li ng-repeat="user in usersGet">
     {{user.name}}
   </li>
 </ul>
+
+
+<hr />
+
+
+<h1>POST</h1>
+
+<button ng-click="loadDataPOST()">Load DATA</button>
+
+<ul>
+  <li ng-repeat="user in usersPost">
+    {{user.name}}
+  </li>
+</ul>
+
+
+<hr />
+
