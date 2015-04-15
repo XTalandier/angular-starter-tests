@@ -11,9 +11,10 @@
  */
 App.factory('$ajaxoffline', ['$http' , '$q', function ($http, $q) {
 
+
   var moduleName = '$ajaxoffline';
 
-  var isOffline = false;
+  var isOffline = true;
 
   var forced = false;
 
@@ -78,8 +79,8 @@ App.factory('$ajaxoffline', ['$http' , '$q', function ($http, $q) {
     var key = createStoringKey('get', url);
     var def = $q.defer();
     localforage.getItem(key)
-      .then(function (data) {
-        def.resolve('aa');
+      .then(function (data, xx) {
+        def.resolve(JSON.parse(data), xx);
       });
 
     return def.promise;
@@ -93,7 +94,7 @@ App.factory('$ajaxoffline', ['$http' , '$q', function ($http, $q) {
    * @returns {string}
    */
   function createStoringKey(verb, url) {
-    return verb + '-' + btoa(url);
+    return verb + '' + btoa(url);
   }
 
   /**
@@ -106,7 +107,8 @@ App.factory('$ajaxoffline', ['$http' , '$q', function ($http, $q) {
   function storeData(verb, url, data) {
     var key = createStoringKey(verb, url);
     var value = JSON.stringify(data);
-
+    //console.log('KEY=' + key);
+    //console.log('VALUE=' + value);
     localforage.setItem(key, value);
   }
 

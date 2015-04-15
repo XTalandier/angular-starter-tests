@@ -1,41 +1,47 @@
-describe('Offline Service', function(){
-  var notify;
+describe('Offline Service', function () {
+
+  localforage.setDriver(localforage.LOCALSTORAGE);
+
   //beforeEach(module('app'));
   beforeEach(module('app'));
 
 
   var dataURL = '/data.json';
 
-  describe('GET Verb',function() {
+  describe('GET Verb', function () {
     var laDataOnline = null;
     var laDataOffline = null;
 
-    var $ao = null;
+    var $ao;
     var $rootScope;
     var $httpBackend;
+    var $q;
+    var deferred;
 
-    beforeEach(inject(function($injector){
+    beforeEach(inject(function ($injector) {
       $httpBackend = $injector.get('$httpBackend');
       $httpBackend.when('GET', dataURL).respond([{name: "U1"}]);
+
       $ao = $injector.get('$ajaxoffline');
       $rootScope = $injector.get('$rootScope');
+      $q = $injector.get('$q');
+
     }));
 
-    /*
-    it('should not retrieve data with "GET" verb in OFFLINE mode', function(){
+    it('should not retrieve data with "GET" verb in OFFLINE mode', function () {
       $ao.forceConnectionStatus(true);
-      $ao.get(dataURL).then(function(data){
+      $ao.get(dataURL).then(function (data) {
         laDataOnline = data;
+        console.log("XX");
       });
 
       $rootScope.$apply();
       expect(laDataOffline).toEqual(null);
     });
-    */
 
-    it('should retrieve data with "GET" verb in ONLINE mode', function(){
+    it('should retrieve data with "GET" verb in ONLINE mode', function () {
       $ao.forceConnectionStatus(false);
-      $ao.get(dataURL).then(function(data){
+      $ao.get(dataURL).then(function (data) {
         laDataOnline = data;
       });
 
@@ -46,35 +52,22 @@ describe('Offline Service', function(){
 
     });
 
-    it('should retrieve the same data than ONLINE mode when OFFLINE', function(){
+    it('should retrieve the same data than ONLINE mode when OFFLINE', function () {
+      deferred = $q.defer();
+      deferred.resolve('get');
+      spyOn($ao, 'get').and.returnValue(deferred.promise);
+
+
       $ao.forceConnectionStatus(true);
-      $ao.get(dataURL).then(function(data){
+      $ao.get(dataURL).then(function (data) {
         laDataOffline = data;
-        console.log("coucou");
       });
 
-
-      $timeout(function(){
-        console.log('aaaa');
-      }, 100);
       $rootScope.$apply();
-      //console.log(laDataOnline);
-      //console.log(laDataOffline);
 
-
-      expect(laDataOffline).toEqual(laDataOnline);
-
+      expect(laDataOffline).not.toEqual(null);
     });
 
 
   });
 });
-
-
-/*
-
- $ajaxoffline.get('data.json').success(function(data){
- laData = data;
- });
-
- */

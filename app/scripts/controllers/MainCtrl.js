@@ -11,5 +11,12 @@ App.controller('MainCtrl', ['$scope', '$ajaxoffline', function ($scope, $ajaxoff
 
   };
 
+  var status = false;
+
+  $scope.switchStatus = function(){
+    $ajaxoffline.forceConnectionStatus(!status);
+  }
+
+
 
 }]);
