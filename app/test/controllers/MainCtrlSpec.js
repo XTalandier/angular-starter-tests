@@ -9,15 +9,27 @@ describe('MainCtrl', function(){
   }));
 
   describe('Loading data', function(){
-    it('Should load data', function() {
+    it('Should load data GET BUTTON', function() {
       var $scope = {};
       var controller = $controller('MainCtrl', { $scope: $scope });
-      $scope.loadData();
+      $scope.loadDataGET();
       setTimeout(function(){
-        expect($scope.users.length).not.toEqual(0);
+        expect($scope.usersGet.length).not.toEqual(0);
 
       }, 100);
     });
+
+    it('Should load data POST BUTTON', function() {
+      var $scope = {};
+      var controller = $controller('MainCtrl', { $scope: $scope });
+      $scope.loadDataPOST();
+      setTimeout(function(){
+        expect($scope.usersPOST.length).not.toEqual(0);
+
+      }, 100);
+    });
+
+
   });
 
 
