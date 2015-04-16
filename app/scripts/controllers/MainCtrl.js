@@ -39,7 +39,7 @@ App.controller('MainCtrl', ['$rootScope', '$scope', '$ajaxoffline', function ($r
 	$scope.stateOfLine = $ajaxoffline.getStatus();
 
 	$rootScope.$on('connectionUpdated', function(){
-		$scope.stateOfLine = $ajaxoffline.getStatus();
+		$scope.stateOfLine = !$ajaxoffline.getStatus();
 	});
 
 
