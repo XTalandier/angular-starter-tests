@@ -42,10 +42,11 @@
   "private": true,
   "scripts": {
     "install": "",
-    "tdd": "karma run app/karma.conf.js",
+    "start": "node_modules/http-server/bin/http-server & open http://127.0.0.1:8080/app/",
     "test": "karma run app/karma.conf.js"
   },
   "dependencies": {
-    "blanket": "^1.1.6"
+    "blanket": "^1.1.6",
+    "http-server": "^0.8.0"
   }
 }
