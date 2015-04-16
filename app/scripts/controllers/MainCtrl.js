@@ -1,4 +1,4 @@
-App.controller('MainCtrl', ['$scope', '$ajaxoffline', function ($scope, $ajaxoffline) {
+App.controller('MainCtrl', ['$rootScope', '$scope', '$ajaxoffline', function ($rootScope, $scope, $ajaxoffline) {
 	$scope.usersGet = [];
 	$scope.usersPost = [];
 
@@ -23,11 +23,18 @@ App.controller('MainCtrl', ['$scope', '$ajaxoffline', function ($scope, $ajaxoff
 
 	};
 
-	var status = false;
+	var status = $ajaxoffline.getStatus();
 
 	$scope.switchStatus = function () {
-		$ajaxoffline.forceConnectionStatus(!status);
-	}
+		status = !status;
+		$ajaxoffline.forceConnectionStatus(status);
+	};
+
+	$scope.stateOfLine = $ajaxoffline.getStatus();
+
+	$rootScope.$on('connectionUpdated', function(){
+		$scope.stateOfLine = $ajaxoffline.getStatus();
+	});
 
 
 }]);
