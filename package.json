@@ -43,7 +43,7 @@
   "scripts": {
     "install": "",
 	"start": "karma start app/karma.conf.js",
-    "test": "karma run app/karma.conf.js"
+    "test": "karma run app/ci-karma.conf.js"
   },
   "dependencies": {
     "blanket": "^1.1.6",
