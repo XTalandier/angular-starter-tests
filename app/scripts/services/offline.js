@@ -16,7 +16,7 @@ App.factory('$ajaxoffline', ['$http', '$q', '$rootScope', function ($http, $q, $
 
 	var moduleName = '$ajaxoffline';
 
-	var isOffline = true;
+	var isOffline = !navigator.onLine;
 
 	var forced = false;
 
@@ -67,7 +67,7 @@ App.factory('$ajaxoffline', ['$http', '$q', '$rootScope', function ($http, $q, $
 	 * @returns {Boolean} True if online, false if offline
 	 */
 	function checkConnection() {
-		isOffline = navigator.onLine;
+		isOffline = !navigator.onLine;
 	}
 
 	/**
@@ -76,7 +76,7 @@ App.factory('$ajaxoffline', ['$http', '$q', '$rootScope', function ($http, $q, $
 	 * @module $ajaxoffline
 	 * @kind function
 	 *
-	 * @description Execuce a request with the GET verb
+	 * @description Execute a request with the GET verb
 	 * @param {string} url URL to access
 	 * @returns {Deferred} Returns a new instance of deferred.
 	 */
@@ -154,8 +154,11 @@ App.factory('$ajaxoffline', ['$http', '$q', '$rootScope', function ($http, $q, $
 		var def = $q.defer();
 		$http.post(url, params)
 			.success(function (data) {
-				storeData('post', url, data, params);
-				def.resolve(data);
+				//storeData('post', url, data, params);
+				def.resolve({
+					online: true,
+					data: data
+				});
 			}).error(function () {
 				def.reject("Error in [POST][ONLINE] " + url);
 			});
@@ -172,9 +175,19 @@ App.factory('$ajaxoffline', ['$http', '$q', '$rootScope', function ($http, $q, $
 	function postDataWhenOffline(url, params) {
 		var key = createStoringKey('post', url, params);
 		var def = $q.defer();
-		localforage.getItem(key)
-			.then(function (data) {
-				def.resolve(JSON.parse(data));
+		var data2save = {
+			verb: 'post',
+			url: url,
+			params: params,
+			date: new Date()
+		};
+
+		storeData('post', url, data2save, params)
+			.then(function(){
+				def.resolve({
+					online: false,
+					data: null
+				});
 			});
 
 		return def.promise;
@@ -204,7 +217,7 @@ App.factory('$ajaxoffline', ['$http', '$q', '$rootScope', function ($http, $q, $
 		var value = JSON.stringify(data);
 		//console.log('KEY=' + key);
 		//console.log('VALUE=' + value);
-		localforage.setItem(key, value);
+		return localforage.setItem(key, value);
 	}
 
 	return {

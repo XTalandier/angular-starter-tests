@@ -13,12 +13,18 @@ App.controller('MainCtrl', ['$rootScope', '$scope', '$ajaxoffline', function ($r
 
 	};
 
-	$scope.loadDataPOST = function () {
+	$scope.saveData = function () {
 
-		$ajaxoffline.post('data.json', {'aaa': 'bbb', 'ccc': 'ddd'}).then(dataLoaded);
+		$ajaxoffline.post(
+			'save.json',
+			{
+				'name': $scope.txtname,
+				'email': $scope.txtemail
+			}
+		).then(dataSaved);
 
-		function dataLoaded(data) {
-			$scope.usersPost = data;
+		function dataSaved(data) {
+			$scope.outputSaved = data;
 		}
 
 	};

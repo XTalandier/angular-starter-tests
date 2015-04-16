@@ -1,6 +1,6 @@
 <button ng-click="switchStatus()">Switch Status</button>
-<h2 ng-hide="!stateOfLine" style="color: #006400;">ONLINE</h2>
-<h2 ng-hide="stateOfLine" style="color: #710909">OFFLINE</h2>
+<h2 ng-hide="stateOfLine" style="color: #006400;">ONLINE</h2>
+<h2 ng-hide="!stateOfLine" style="color: #710909">OFFLINE</h2>
 <hr/>
 <h1>GET</h1>
 
@@ -18,14 +18,10 @@
 
 <h1>POST</h1>
 
-<button ng-click="loadDataPOST()">Load DATA</button>
-
-<ul>
-	<li ng-repeat="user in usersPost">
-		{{user.name}}
-	</li>
-</ul>
-
-
-<hr/>
-
+<input type="text" ng-model="txtname" placeholder="Name"/>
+<input type="text" ng-model="txtemail" placeholder="Email"/>
+<button ng-click="saveData()">Save</button>
+<br/>
+<pre style="background-color: #ececec">
+	{{ outputSaved }}
+</pre>
