@@ -27,6 +27,10 @@ App.factory('$ajaxoffline', ['$http', '$q', '$rootScope', function ($http, $q, $
 	}
 
 	function getStatus(){
+		if (!forced) {
+			checkConnection();
+		}
+
 		return isOffline;
 	}
 

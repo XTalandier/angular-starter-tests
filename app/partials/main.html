@@ -1,6 +1,6 @@
 <button ng-click="switchStatus()">Switch Status</button>
-<h2 ng-hide="stateOfLine" style="color: #006400;">ONLINE</h2>
-<h2 ng-hide="!stateOfLine" style="color: #710909">OFFLINE</h2>
+<h2 ng-show="!stateOfLine" style="color: #006400;">ONLINE</h2>
+<h2 ng-show="stateOfLine" style="color: #710909">OFFLINE</h2>
 <hr/>
 <h1>GET</h1>
 
