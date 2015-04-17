@@ -18,6 +18,7 @@ module.exports = function(config) {
       'assets/scripts/vendor.js',
       'assets/scripts/libs/**.js',
       'scripts/**/**.js',
+      'partials/**/**.js',
       'test/**/**.js'
     ],
 
@@ -30,7 +31,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'scripts/**/*.js': ['coverage']
+      'partials/**/module/*.js': ['coverage']
     },
 
 

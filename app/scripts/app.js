@@ -20,17 +20,17 @@ var App = angular.module('app', ['ngSanitize', 'ngResource', 'ui.router']).confi
 		url: "/", // root route
 		views: {
 			"@": {
-				templateUrl: "partials/main.html",
+				templateUrl: "partials/main/module/main.html",
 				controller: 'MainCtrl'
 			}
 		}
-	}).state('todo', {
+	}).state('page2', {
 		parent: 'index',
-		url: "/todo",
+		url: "/page2",
 		views: {
 			"@": {
-				templateUrl: "partials/todo.html",
-				controller: 'TodoCtrl'
+				templateUrl: "partials/page2/module/page2.html",
+				controller: 'Page2Ctrl'
 			}
 		}
 	});
